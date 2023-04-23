@@ -10,16 +10,10 @@
 	export let element = 'button';
 
 	const createVariant = ({ variant, color }) => {
+		if (variant === 'filled') return `btn-${color}`;
 		if (variant === 'tonal') return color === 'primary' ? 'btn-tonal' : `btn-tonal-${color}`;
-
-		if (variant === 'outline' && color === 'primary') return `btn-outline`;
-
-		if (variant === 'outline') return `btn-outline-${color}`;
-
-		if (variant === 'flat' && color === 'primary') return `btn-flat`;
-
-		if (variant === 'flat') return `btn-flat-${color}`;
-
+		if (variant === 'outline') return color === 'primary' ? `btn-outline` : `btn-outline-${color}`;
+		if (variant === 'flat') return color === 'primary' ? `btn-flat` : `btn-flat-${color}`;
 		return `btn-${color} btn-${variant}`;
 	};
 
