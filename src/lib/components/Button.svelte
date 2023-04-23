@@ -10,7 +10,7 @@
 	export let element = 'button';
 
 	const createVariant = ({ variant, color }) => {
-		if (variant === 'tonal') return `btn-${color} btn-tonal`;
+		if (variant === 'tonal') return color === 'primary' ? 'btn-tonal' : `btn-tonal-${color}`;
 
 		if (variant === 'outline' && color === 'primary') return `btn-outline`;
 

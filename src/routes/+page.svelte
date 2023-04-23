@@ -2,6 +2,8 @@
 	// @ts-nocheck
 
 	import '$lib/components/styles.css';
+	import '$lib/components/custom.css';
+
 	import Buttons from '$lib/demos/Buttons.svelte';
 
 	let show = 'buttons';

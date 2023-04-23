@@ -8,17 +8,17 @@
 		<div class="h5">Sizes</div>
 	</div>
 	<div class="d-flex mb-8">
-		<Button color="primary" size="sm">Small</Button>
-		<Button color="primary" size="med">Medium</Button>
-		<Button color="primary" size="lg">large</Button>
+		<Button color="tertiary" size="sm">Small</Button>
+		<Button color="tertiary" size="med">Medium</Button>
+		<Button color="tertiary" size="lg">large</Button>
 	</div>
 	<div class="mb-4">
 		<div class="h5">Full Width</div>
 	</div>
 	<div class="d-flex mb-8">
-		<Button fullWidth customClass="mb-4" color="primary" size="sm">Small</Button>
-		<Button fullWidth customClass="mb-4" color="primary" size="med">Medium</Button>
-		<Button fullWidth customClass="mb-4" color="primary" size="lg">large</Button>
+		<Button fullWidth customClass="mb-4" color="tertiary" size="sm">Small</Button>
+		<Button fullWidth customClass="mb-4" color="tertiary" size="med">Medium</Button>
+		<Button fullWidth customClass="mb-4" color="tertiary" size="lg">large</Button>
 	</div>
 	<div class="mb-4">
 		<div class="h5">Colors</div>
@@ -27,8 +27,7 @@
 		<Button color="primary" size="med">Primary</Button>
 		<Button color="secondary" size="med">Secondary</Button>
 		<Button color="destructive" size="med">Destructive</Button>
-		<Button color="hot-pink" size="med">Hot Pink</Button>
-		<Button color="canary" size="med">Canary</Button>
+		<Button color="tertiary" size="med">Tertiary</Button>
 	</div>
 	<div class="mb-4">
 		<div class="h5">Variants</div>
@@ -50,6 +49,12 @@
 		<Button color="destructive" size="med" variant="outline">Outlined</Button>
 		<Button color="destructive" size="med" variant="flat">Flat</Button>
 	</div>
+	<div class="d-flex mb-8">
+		<Button color="tertiary" size="med">Filled</Button>
+		<Button color="tertiary" size="med" variant="tonal">Tonal</Button>
+		<Button color="tertiary" size="med" variant="outline">Outlined</Button>
+		<Button color="tertiary" size="med" variant="flat">Flat</Button>
+	</div>
 	<div class="mb-4">
 		<div class="h5">Borders</div>
 	</div>
@@ -69,6 +74,7 @@
 		<Button color="primary" size="med" disabled>Primary</Button>
 		<Button color="secondary" size="med" disabled>Secondary</Button>
 		<Button color="destructive" size="med" disabled>Destructive</Button>
+		<Button color="tertiary" size="med" disabled>Tertiary</Button>
 	</div>
 	<div class="d-flex mb-8">
 		<Button disabled color="destructive" size="med">Filled</Button>
@@ -79,6 +85,23 @@
 	<div class="mb-4">
 		<div class="h5">Circle</div>
 	</div>
+	<div class="d-flex mb-8">
+		<Button circle color="tertiary" size="sm">&times;</Button>
+		<Button circle color="tertiary" size="sm" variant="tonal">&times;</Button>
+		<Button circle color="tertiary" size="sm" variant="outline">&times;</Button>
+		<Button circle color="tertiary" size="sm" variant="flat">&times;</Button>
+
+		<Button circle color="tertiary" size="med">&times;</Button>
+		<Button circle color="tertiary" size="med" variant="tonal">&times;</Button>
+		<Button circle color="tertiary" size="med" variant="outline">&times;</Button>
+		<Button circle color="tertiary" size="med" variant="flat">&times;</Button>
+
+		<Button circle color="tertiary" size="lg">&times;</Button>
+		<Button circle color="tertiary" size="lg" variant="tonal">&times;</Button>
+		<Button circle color="tertiary" size="lg" variant="outline">&times;</Button>
+		<Button circle color="tertiary" size="lg" variant="flat">&times;</Button>
+	</div>
+
 	<div class="d-flex mb-8">
 		<Button circle color="primary" size="sm">&times;</Button>
 		<Button circle color="primary" size="sm" variant="tonal">&times;</Button>
