@@ -1,4 +1,6 @@
 <script>
+	import { classnames } from './utils';
+
 	// @ts-nocheck
 	export let size = 'md';
 	export let color = 'tertiary';
@@ -12,15 +14,13 @@
 			md: 'badge-med'
 		}[size] || 'badge-med';
 
-	$: classes = [
+	$: classes = classnames([
 		'badge',
 		badgeSize,
 		color ? `badge-${color}` : 'badge-tertiary',
 		fullWidth ? 'w-100' : '',
 		customClass
-	]
-		.filter((v) => v)
-		.join(' ');
+	]);
 </script>
 
 <svelte:element this={element} {...$$restProps} class={classes}>

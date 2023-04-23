@@ -17,9 +17,16 @@
 		return `btn-${color} btn-${variant}`;
 	};
 
+	$: buttonSize =
+		{
+			sm: 'btn-sm',
+			md: 'btn-med',
+			lg: 'btn-lg'
+		}[size] || 'btn-med';
+
 	$: classes = [
 		'btn',
-		size ? `btn-${size}` : '',
+		buttonSize,
 		createVariant({ variant, color }),
 		border ? '' : 'btn-border-none',
 		circle ? 'btn-circle' : '',

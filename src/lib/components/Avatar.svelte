@@ -1,4 +1,6 @@
 <script>
+	import { classnames } from './utils';
+
 	export let bg = '';
 	export let fg = '';
 	export let src = '';
@@ -13,9 +15,7 @@
 
 	$: avatarVariant = variant === 'rounded' ? 'circle' : 'square';
 
-	$: classes = ['overflow-hidden', 'inline-flex', 'fw-500', avatarVariant, customClass]
-		.filter((v) => v)
-		.join(' ');
+	$: classes = classnames(['overflow-hidden', 'inline-flex', 'fw-500', avatarVariant, customClass]);
 </script>
 
 <div
@@ -24,7 +24,6 @@
 	style="width: {width}px; height: {height}px; background-color: {backgroundColor}; color: {textColor};"
 >
 	{#if src}
-		<!-- content here -->
 		<img {src} {alt} />
 	{:else}
 		<slot />
