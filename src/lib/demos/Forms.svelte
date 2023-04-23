@@ -1,4 +1,6 @@
 <script>
+	import GenderList from '$lib/components/GenderList.svelte';
+	import Genderlist from '$lib/components/GenderList.svelte';
 	import IconEmail from '$lib/components/IconEmail.svelte';
 	import IconEye from '$lib/components/IconEye.svelte';
 	import TextField from '$lib/components/TextField.svelte';
@@ -59,6 +61,8 @@
 	required
 	rows="5"
 />
+
+<GenderList />
 
 <style>
 	.error-message {

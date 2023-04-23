@@ -1,0 +1,84 @@
+<script>
+	// @ts-nocheck
+
+	import IconFemale from './IconFemale.svelte';
+	import IconMale from './IconMale.svelte';
+	import IconNonBinary from './IconNonBinary.svelte';
+	import IconStar from './IconStar.svelte';
+	import IconMonkey from './IconMonkey.svelte';
+
+	import GenderListItem from '$lib/components/GenderListItem.svelte';
+
+	let selected = 'female';
+
+	const labels = {
+		male: 'Male',
+		female: 'Female',
+		'non-binary': 'Non-binary',
+		other: 'Other',
+		none: 'Prefer not to say'
+	};
+
+	const onItemClicked = (evt) => {
+		selected = evt.detail.selected;
+	};
+</script>
+
+<GenderListItem
+	on:selected={onItemClicked}
+	selected={selected === 'female'}
+	label={labels['female']}
+	value="female"
+	customClass="mb-4"
+>
+	<span slot="icon">
+		<IconFemale />
+	</span>
+</GenderListItem>
+
+<GenderListItem
+	on:selected={onItemClicked}
+	selected={selected === 'male'}
+	value="male"
+	label={labels['male']}
+	customClass="mb-4"
+>
+	<span slot="icon">
+		<IconMale />
+	</span>
+</GenderListItem>
+
+<GenderListItem
+	on:selected={onItemClicked}
+	selected={selected === 'non-binary'}
+	value="non-binary"
+	label={labels['non-binary']}
+	customClass="mb-4"
+>
+	<span slot="icon">
+		<IconNonBinary />
+	</span>
+</GenderListItem>
+
+<GenderListItem
+	on:selected={onItemClicked}
+	selected={selected === 'other'}
+	value="other"
+	label={labels['other']}
+	customClass="mb-4"
+>
+	<span slot="icon">
+		<IconStar />
+	</span>
+</GenderListItem>
+
+<GenderListItem
+	on:selected={onItemClicked}
+	selected={selected === 'none'}
+	value="none"
+	label={labels['none']}
+>
+	<span slot="icon">
+		<IconMonkey />
+	</span>
+</GenderListItem>
