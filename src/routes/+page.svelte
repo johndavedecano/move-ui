@@ -5,6 +5,7 @@
 	import '$lib/components/custom.css';
 
 	import Buttons from '$lib/demos/Buttons.svelte';
+	import Avatars from '$lib/demos/Avatars.svelte';
 
 	let show = 'buttons';
 
@@ -18,12 +19,15 @@
 		<li>
 			<a href="/" on:click|preventDefault={() => toggle('buttons')}>Buttons</a>
 		</li>
+		<li>
+			<a href="/" on:click|preventDefault={() => toggle('avatars')}>Avatars</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}
 		<Buttons />
-	{:else if show === ''}
-		<Buttons />
+	{:else if show === 'avatars'}
+		<Avatars />
 	{:else}
 		<Buttons />
 	{/if}
