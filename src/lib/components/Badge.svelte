@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import { classnames } from './utils';
 
 	// @ts-nocheck
@@ -8,15 +10,14 @@
 	export let customClass = '';
 	export let element = 'span';
 
-	$: badgeSize =
-		{
-			sm: 'badge-small',
-			md: 'badge-med'
-		}[size] || 'badge-med';
+	const badgeSize = {
+		sm: 'badge-small',
+		md: 'badge-med'
+	};
 
 	$: classes = classnames([
 		'badge',
-		badgeSize,
+		badgeSize[size],
 		color ? `badge-${color}` : 'badge-tertiary',
 		fullWidth ? 'w-100' : '',
 		customClass

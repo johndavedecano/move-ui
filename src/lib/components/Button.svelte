@@ -11,23 +11,28 @@
 
 	const createVariant = ({ variant, color }) => {
 		if (variant === 'filled') return `btn-${color}`;
-		if (variant === 'tonal') return color === 'primary' ? 'btn-tonal' : `btn-tonal-${color}`;
-		if (variant === 'outline') return color === 'primary' ? `btn-outline` : `btn-outline-${color}`;
-		if (variant === 'flat') return color === 'primary' ? `btn-flat` : `btn-flat-${color}`;
+
+		if (color === 'primary') return `btn-${variant}`;
+
+		if (variant === 'tonal') return `btn-tonal-${color}`;
+
+		if (variant === 'outline') return `btn-outline-${color}`;
+
+		if (variant === 'flat') return `btn-flat-${color}`;
+
 		return `btn-${color} btn-${variant}`;
 	};
 
-	$: buttonSize =
-		{
-			sm: 'btn-sm',
-			md: 'btn-med',
-			lg: 'btn-lg'
-		}[size] || 'btn-med';
+	const buttonSize = {
+		sm: 'btn-sm',
+		md: 'btn-med',
+		lg: 'btn-lg'
+	};
 
 	$: classes = [
 		'btn',
-		buttonSize,
 		createVariant({ variant, color }),
+		buttonSize[size],
 		border ? '' : 'btn-border-none',
 		circle ? 'btn-circle' : '',
 		fullWidth ? 'w-100' : '',
