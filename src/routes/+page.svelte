@@ -2,10 +2,10 @@
 	// @ts-nocheck
 
 	import '$lib/components/styles.css';
-	import '$lib/components/custom.css';
 
 	import Buttons from '$lib/demos/Buttons.svelte';
 	import Avatars from '$lib/demos/Avatars.svelte';
+	import Badges from '$lib/demos/Badges.svelte';
 
 	let show = 'buttons';
 
@@ -22,12 +22,17 @@
 		<li>
 			<a href="/" on:click|preventDefault={() => toggle('avatars')}>Avatars</a>
 		</li>
+		<li>
+			<a href="/" on:click|preventDefault={() => toggle('badges')}>Badges</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}
 		<Buttons />
 	{:else if show === 'avatars'}
 		<Avatars />
+	{:else if show === 'badges'}
+		<Badges />
 	{:else}
 		<Buttons />
 	{/if}
