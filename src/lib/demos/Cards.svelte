@@ -15,7 +15,17 @@
 		</Card>
 		<Card border="sm" customClass="mb-4">
 			<div class="p-8">
-				<p>Bordered</p>
+				<p>Bordered SM</p>
+			</div>
+		</Card>
+		<Card border="md" customClass="mb-4">
+			<div class="p-8">
+				<p>Bordered MD</p>
+			</div>
+		</Card>
+		<Card border="lg" customClass="mb-4">
+			<div class="p-8">
+				<p>Bordered LG</p>
 			</div>
 		</Card>
 		<Card shadow="sm" customClass="mb-4">
