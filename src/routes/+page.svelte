@@ -8,6 +8,7 @@
 	import Badges from '$lib/demos/Badges.svelte';
 	import Alerts from '$lib/demos/Alerts.svelte';
 	import Cards from '$lib/demos/Cards.svelte';
+	import Forms from '$lib/demos/Forms.svelte';
 
 	let show = 'buttons';
 
@@ -33,6 +34,9 @@
 		<li>
 			<a href="/" on:click|preventDefault={() => toggle('cards')}>Cards</a>
 		</li>
+		<li>
+			<a href="/" on:click|preventDefault={() => toggle('forms')}>Forms</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}
@@ -45,6 +49,8 @@
 		<Alerts />
 	{:else if show === 'cards'}
 		<Cards />
+	{:else if show === 'forms'}
+		<Forms />
 	{:else}
 		<Buttons />
 	{/if}

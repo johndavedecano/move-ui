@@ -1,5 +1,8 @@
 <script>
 	// @ts-nocheck
+
+	import { classnames } from './utils';
+
 	export let size = 'med';
 	export let variant = 'filled';
 	export let color = 'primary';
@@ -29,7 +32,7 @@
 		lg: 'btn-lg'
 	};
 
-	$: classes = [
+	$: classes = classnames([
 		'btn',
 		createVariant({ variant, color }),
 		buttonSize[size],
@@ -37,9 +40,7 @@
 		circle ? 'btn-circle' : '',
 		fullWidth ? 'w-100' : '',
 		customClass
-	]
-		.filter((v) => v)
-		.join(' ');
+	]);
 </script>
 
 <svelte:element this={element} {...$$restProps} class={classes}>
