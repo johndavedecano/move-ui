@@ -1,12 +1,41 @@
 <script>
-	import '$lib/components/styles.css';
+	// @ts-nocheck
 
-	import Button from '$lib/components/Button.svelte';
+	import '$lib/components/styles.css';
+	import Buttons from '$lib/demos/Buttons.svelte';
+
+	let show = 'buttons';
+
+	const toggle = (type) => (show = type);
 </script>
 
-<div>
+<div class="px-4 py-8">
 	<h1>Move Svelte Components</h1>
-	<p>Component library for the move project</p>
-	<h3>Button</h3>
-	<Button>Primary</Button>
+	<p class="mb-8">Component library for the move project</p>
+	<ul class="demo-list">
+		<li>
+			<a href="/" on:click|preventDefault={() => toggle('buttons')}>Buttons</a>
+		</li>
+	</ul>
+	<hr />
+	{#if show === 'buttons'}
+		<Buttons />
+	{:else if show === ''}
+		<Buttons />
+	{:else}
+		<Buttons />
+	{/if}
 </div>
+
+<style>
+	.demo-list {
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	.demo-list li a {
+		display: flex;
+		padding: 5px;
+		border: solid 1px var(--navy);
+	}
+</style>

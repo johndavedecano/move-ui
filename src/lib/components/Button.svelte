@@ -1,17 +1,41 @@
 <script>
-	import cx from 'classnames';
+	// @ts-nocheck
+	export let size = 'med';
+	export let variant = 'filled';
+	export let color = 'primary';
+	export let circle = false;
+	export let border = true;
+	export let fullWidth = false;
+	export let customClass = '';
+	export let element = 'button';
 
-	export let size = ''; // lg, md, sm
-	export let variant = ''; // filled, tonal, outlined, flat
-	export let color = 'primary'; // primary, seconary, destructive
-	export let disabled = false;
-	export let icon = false;
+	const createVariant = ({ variant, color }) => {
+		if (variant === 'tonal') return `btn-${color} btn-tonal`;
 
-	$: classes = cx({
-		btn: true
-	});
+		if (variant === 'outline' && color === 'primary') return `btn-outline`;
+
+		if (variant === 'outline') return `btn-outline-${color}`;
+
+		if (variant === 'flat' && color === 'primary') return `btn-flat`;
+
+		if (variant === 'flat') return `btn-flat-${color}`;
+
+		return `btn-${color} btn-${variant}`;
+	};
+
+	$: classes = [
+		'btn',
+		size ? `btn-${size}` : '',
+		createVariant({ variant, color }),
+		border ? '' : 'btn-border-none',
+		circle ? 'btn-circle' : '',
+		fullWidth ? 'w-100' : '',
+		customClass
+	]
+		.filter((v) => v)
+		.join(' ');
 </script>
 
-<button class={classes}>
+<svelte:element this={element} {...$$restProps} class={classes}>
 	<slot />
-</button>
+</svelte:element>
