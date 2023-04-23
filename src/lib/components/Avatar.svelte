@@ -13,7 +13,7 @@
 
 	$: avatarVariant = variant === 'rounded' ? 'circle' : 'square';
 
-	$: classes = ['overflow-hidden', 'inline-flex', 'fw500', avatarVariant, customClass]
+	$: classes = ['overflow-hidden', 'inline-flex', 'fw-500', avatarVariant, customClass]
 		.filter((v) => v)
 		.join(' ');
 </script>

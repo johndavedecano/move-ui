@@ -6,6 +6,7 @@
 	import Buttons from '$lib/demos/Buttons.svelte';
 	import Avatars from '$lib/demos/Avatars.svelte';
 	import Badges from '$lib/demos/Badges.svelte';
+	import Alerts from '$lib/demos/Alerts.svelte';
 
 	let show = 'buttons';
 
@@ -25,6 +26,9 @@
 		<li>
 			<a href="/" on:click|preventDefault={() => toggle('badges')}>Badges</a>
 		</li>
+		<li>
+			<a href="/" on:click|preventDefault={() => toggle('alerts')}>Alerts</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}
@@ -33,6 +37,8 @@
 		<Avatars />
 	{:else if show === 'badges'}
 		<Badges />
+	{:else if show === 'alerts'}
+		<Alerts />
 	{:else}
 		<Buttons />
 	{/if}
