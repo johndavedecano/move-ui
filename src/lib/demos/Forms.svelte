@@ -1,6 +1,5 @@
 <script>
 	import GenderList from '$lib/components/GenderList.svelte';
-	import Genderlist from '$lib/components/GenderList.svelte';
 	import IconEmail from '$lib/components/IconEmail.svelte';
 	import IconEye from '$lib/components/IconEye.svelte';
 	import TextField from '$lib/components/TextField.svelte';
@@ -13,6 +12,16 @@
 	type="email"
 	placeholder="Your email address"
 	required
+/>
+
+<TextField
+	wrapperClass="mb-4"
+	label="Email"
+	name="email"
+	type="email"
+	placeholder="I am a disabled input"
+	required
+	disabled
 />
 
 <TextField

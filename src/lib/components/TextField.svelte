@@ -68,6 +68,16 @@
 		border-color: var(--coral-dark);
 	}
 
+	.text-field-input:has(:disabled) {
+		border-color: var(--gray-4);
+		background-color: var(--gray-3);
+	}
+
+	.text-field-input input:disabled,
+	.text-field-input textarea:disabled {
+		color: var(--gray-5);
+	}
+
 	.text-field-input input,
 	.text-field-input textarea {
 		border: none;
