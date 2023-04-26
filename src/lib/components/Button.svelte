@@ -73,10 +73,11 @@
 	.btn-tertiary {
 		--btn-bg: var(--coral-dark);
 		--btn-color: var(--white);
+		transition: all 100ms ease-in-out;
 	}
 
 	.btn-tertiary:hover {
-		--btn-bg: var(--coral-dark);
+		--btn-bg: var(--coral);
 		--btn-color: var(--white);
 	}
 

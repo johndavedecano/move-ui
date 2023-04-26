@@ -37,6 +37,9 @@
 		<li>
 			<a href="/" on:click|preventDefault={() => toggle('forms')}>Forms</a>
 		</li>
+		<li>
+			<a href="/splash">Splash</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}
