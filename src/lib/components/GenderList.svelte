@@ -32,7 +32,7 @@
 	customClass="mb-4"
 >
 	<span slot="icon">
-		<IconFemale />
+		<img src="/female.png" alt="female" />
 	</span>
 </GenderListItem>
 
@@ -44,7 +44,7 @@
 	customClass="mb-4"
 >
 	<span slot="icon">
-		<IconMale />
+		<img src="/male.png" alt="male" />
 	</span>
 </GenderListItem>
 
@@ -56,7 +56,7 @@
 	customClass="mb-4"
 >
 	<span slot="icon">
-		<IconNonBinary />
+		<img src="/non-binary.png" alt="non-binary" />
 	</span>
 </GenderListItem>
 
@@ -68,7 +68,7 @@
 	customClass="mb-4"
 >
 	<span slot="icon">
-		<IconStar />
+		<img src="/star.png" alt="star" />
 	</span>
 </GenderListItem>
 
@@ -79,6 +79,13 @@
 	label={labels['none']}
 >
 	<span slot="icon">
-		<IconMonkey />
+		<img src="/monkey.png" alt="monkey" />
 	</span>
 </GenderListItem>
+
+<style>
+	img {
+		width: 24px;
+		height: auto;
+	}
+</style>
