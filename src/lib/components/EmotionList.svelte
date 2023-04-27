@@ -1,23 +1,51 @@
 <script>
 	// @ts-nocheck
+	let selected = 0;
+
+	const onClickItem = (next) => (selected = next);
 </script>
 
 <div class="emotion-list">
-	<div class="br-8 emotion-list-item">
+	<a
+		class="br-8 emotion-list-item"
+		class:selected={selected === 1}
+		href="/"
+		on:click|preventDefault={() => onClickItem(1)}
+	>
 		<img src="/emotion-1.png" alt="1" />
-	</div>
-	<div class="br-8 emotion-list-item">
+	</a>
+	<a
+		class="br-8 emotion-list-item"
+		class:selected={selected === 2}
+		href="/"
+		on:click|preventDefault={() => onClickItem(2)}
+	>
 		<img src="/emotion-2.png" alt="2" />
-	</div>
-	<div class="br-8 emotion-list-item">
+	</a>
+	<a
+		class="br-8 emotion-list-item"
+		class:selected={selected === 3}
+		href="/"
+		on:click|preventDefault={() => onClickItem(3)}
+	>
 		<img src="/emotion-3.png" alt="3" />
-	</div>
-	<div class="br-8 emotion-list-item">
+	</a>
+	<a
+		class="br-8 emotion-list-item"
+		class:selected={selected === 4}
+		href="/"
+		on:click|preventDefault={() => onClickItem(4)}
+	>
 		<img src="/emotion-4.png" alt="4" />
-	</div>
-	<div class="br-8 emotion-list-item">
+	</a>
+	<a
+		class="br-8 emotion-list-item"
+		class:selected={selected === 5}
+		href="/"
+		on:click|preventDefault={() => onClickItem(5)}
+	>
 		<img src="/emotion-5.png" alt="5" />
-	</div>
+	</a>
 </div>
 
 <style>
@@ -46,8 +74,8 @@
 
 	.emotion-list-item:hover,
 	:global(.emotion-list-item.selected) {
-		background-color: var(--coral-light);
-		border-color: var(--coral-dark);
+		background-color: var(--coral-light) !important;
+		border-color: var(--coral-dark) !important;
 	}
 
 	img {
