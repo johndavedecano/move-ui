@@ -11,6 +11,7 @@
 	import Forms from '$lib/demos/Forms.svelte';
 	import Checkboxes from '$lib/demos/Checkboxes.svelte';
 	import RadioButtons from '$lib/demos/RadioButtons.svelte';
+	import CheckIcons from '$lib/demos/CheckIcons.svelte';
 
 	let show = 'buttons';
 
@@ -46,6 +47,9 @@
 			<a href="/" on:click|preventDefault={() => toggle('radio-buttons')}>Radio Buttons</a>
 		</li>
 		<li>
+			<a href="/" on:click|preventDefault={() => toggle('check-icons')}>Check Icons</a>
+		</li>
+		<li>
 			<a href="/splash">Splash</a>
 		</li>
 	</ul>
@@ -66,6 +70,8 @@
 		<Checkboxes />
 	{:else if show === 'radio-buttons'}
 		<RadioButtons />
+	{:else if show === 'check-icons'}
+		<CheckIcons />
 	{:else}
 		<Buttons />
 	{/if}
