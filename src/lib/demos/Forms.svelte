@@ -1,4 +1,5 @@
 <script>
+	import EmotionList from '$lib/components/EmotionList.svelte';
 	import GenderList from '$lib/components/GenderList.svelte';
 	import IconEmail from '$lib/components/IconEmail.svelte';
 	import IconEye from '$lib/components/IconEye.svelte';
@@ -71,7 +72,13 @@
 	rows="5"
 />
 
-<GenderList />
+<div class="mb-4">
+	<GenderList />
+</div>
+
+<div class="mb-4">
+	<EmotionList />
+</div>
 
 <style>
 	.error-message {
