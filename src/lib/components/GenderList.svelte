@@ -1,12 +1,6 @@
 <script>
 	// @ts-nocheck
 
-	import IconFemale from './IconFemale.svelte';
-	import IconMale from './IconMale.svelte';
-	import IconNonBinary from './IconNonBinary.svelte';
-	import IconStar from './IconStar.svelte';
-	import IconMonkey from './IconMonkey.svelte';
-
 	import GenderListItem from '$lib/components/GenderListItem.svelte';
 
 	let selected = 'female';
