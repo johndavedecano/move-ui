@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	import IconCheck from './IconCheck.svelte';
+	import Icon from './Icon.svelte';
 
 	export let id = '';
 	export let name = 'checkbox';
@@ -10,7 +10,7 @@
 <label for={name} class="checkbox">
 	<input type="checkbox" {name} {id} {...$$restProps} />
 	<div class="checkbox-checker">
-		<IconCheck class="checkbox-icon" />
+		<Icon name="check" class="checkbox-icon" />
 	</div>
 	{#if $$slots.default}
 		<span class="checkbox-label">

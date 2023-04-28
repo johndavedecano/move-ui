@@ -1,5 +1,5 @@
 <script>
-	import IconCheck from './IconCheck.svelte';
+	import Icon from './Icon.svelte';
 
 	export let color = '';
 	export let element = 'div';
@@ -16,7 +16,7 @@
 	{#if $$slots.default}
 		<slot />
 	{:else}
-		<IconCheck />
+		<Icon width="13px" name="check" />
 	{/if}
 </svelte:element>
 

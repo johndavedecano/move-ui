@@ -1,6 +1,6 @@
 <script>
 	// @ts-nocheck
-	import IconDot from './IconDot.svelte';
+	import Icon from './Icon.svelte';
 
 	export let id = '';
 	export let name = 'radio-button';
@@ -9,7 +9,7 @@
 <label for={name} class="radio-button">
 	<input type="radio" {name} {id} {...$$restProps} />
 	<div class="radio-button-checker">
-		<IconDot class="radio-button-icon" />
+		<Icon name="dot" class="radio-button-icon" />
 	</div>
 	{#if $$slots.default}
 		<span class="radio-button-label">
