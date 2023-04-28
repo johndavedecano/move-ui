@@ -55,13 +55,14 @@
 		justify-content: center;
 		gap: 8px;
 	}
+
 	.emotion-list-item {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 59px;
 		height: 48px;
-		background: #ffffff;
+		background: var(--white);
 		border: 1px solid var(--gray-4);
 		border-radius: 8px;
 		cursor: pointer;
