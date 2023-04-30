@@ -4,9 +4,13 @@
 
 <div class="header">
 	<slot name="prepend" />
-	<a href="/" class="logo">
-		<Icon name="mm-logo" />
-	</a>
+	<div class="logo">
+		<slot name="center">
+			<a href="/">
+				<Icon name="mm-logo" />
+			</a>
+		</slot>
+	</div>
 	<slot name="append" />
 </div>
 

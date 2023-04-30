@@ -42,7 +42,8 @@
 		background-color: var(--white);
 		bottom: 0;
 		display: flex;
-		height: var(--bottom-height);
+		flex-direction: column;
+		min-height: var(--bottom-height);
 		justify-content: center;
 		left: 0;
 		padding-left: var(--space-6);
