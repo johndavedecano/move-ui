@@ -1,5 +1,6 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
+	import DateField from '$lib/components/DateField.svelte';
 	import GenderList from '$lib/components/GenderList.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
@@ -21,20 +22,7 @@
 	<svelte:fragment slot="content">
 		<div class="title-5 navy-dark fw-600 mb-8 text-center">Your birthday</div>
 		<form action="">
-			<TextField
-				name="dob"
-				type="date"
-				wrapperClass="mb-4"
-				placeholder="DD/MM/YYYY"
-				pattern="\d{2}-\d{2}-\d{4}"
-			>
-				<span slot="prepend">
-					<Icon name="calendar" />
-				</span>
-				<span slot="message">
-					<TextFieldMessage customClass="pt-2">Date of birth field is required</TextFieldMessage>
-				</span>
-			</TextField>
+			<DateField name="dob" type="date" wrapperClass="mb-4" placeholder="DD/MM/YYYY" />
 		</form>
 	</svelte:fragment>
 	<svelte:fragment slot="actions">

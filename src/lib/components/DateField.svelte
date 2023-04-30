@@ -9,6 +9,7 @@
 	export let placeholder = '';
 	export let wrapperClass = '';
 	export let inputClass = '';
+	export let format = 'dd/MM/yyyy';
 
 	let value = new Date();
 
@@ -23,7 +24,7 @@
 		<div class="text-field-prepend">
 			<Icon name="calendar" />
 		</div>
-		<DateInput {placeholder} class={customInputClass} {...$$restProps} bind:value />
+		<DateInput {placeholder} class={customInputClass} {format} {...$$restProps} bind:value />
 	</div>
 	{#if $$slots.message}
 		<div class="text-field-message">
@@ -43,6 +44,37 @@
 		font-size: var(--label);
 		font-weight: var(--fw-400);
 		margin-bottom: var(--space-1);
+	}
+
+	:global(.text-field-input input:disabled) {
+		color: var(--gray-5) !important;
+	}
+
+	:global(.date-time-field) {
+		display: inline;
+		width: 100%;
+	}
+
+	:global(.text-field-input input) {
+		border: none !important;
+		color: var(--navy-dark) !important;
+		display: inline-flex !important;
+		font-size: var(--label) !important;
+		font-weight: var(--fw-400) !important;
+		height: 100% !important;
+		width: 100% !important;
+		min-width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	:global(.text-field-input input:focus) {
+		border: none !important;
+		outline: none !important;
+		min-width: 100% !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		box-shadow: none !important;
 	}
 
 	.text-field-message {
@@ -68,5 +100,11 @@
 	.text-field-input:has(:disabled) {
 		border-color: var(--gray-4);
 		background-color: var(--gray-3);
+	}
+
+	input[type='date']::-webkit-inner-spin-button,
+	input[type='date']::-webkit-calendar-picker-indicator {
+		display: none;
+		-webkit-appearance: none;
 	}
 </style>
