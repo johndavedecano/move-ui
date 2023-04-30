@@ -16,7 +16,7 @@
 	{#if $$slots.default}
 		<slot />
 	{:else}
-		<Icon width="13px" name="check" />
+		<Icon name="check" />
 	{/if}
 </svelte:element>
 

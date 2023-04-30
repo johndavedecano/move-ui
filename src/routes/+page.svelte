@@ -50,7 +50,7 @@
 			<a href="/" on:click|preventDefault={() => toggle('check-icons')}>Check Icons</a>
 		</li>
 		<li>
-			<a href="/splash">Splash</a>
+			<a href="/pages">Pages</a>
 		</li>
 	</ul>
 	<hr />

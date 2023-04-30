@@ -2,7 +2,7 @@
 	// @ts-nocheck
 
 	import CheckIcon from '$lib/components/CheckIcon.svelte';
-	import IconDot from '$lib/components/IconDot.svelte';
+	import Icon from '$lib/components/Icon.svelte';
 	import IconFire from '$lib/components/IconFire.svelte';
 </script>
 
@@ -16,7 +16,7 @@
 	<CheckIcon color="error" />
 
 	<CheckIcon color="navy-dark">
-		<IconDot />
+		<Icon name="dot" />
 	</CheckIcon>
 
 	<CheckIcon color="navy-dark">

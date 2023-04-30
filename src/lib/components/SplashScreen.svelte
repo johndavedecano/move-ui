@@ -1,25 +1,43 @@
 <script>
+	// @ts-nocheck
+	import { createEventDispatcher } from 'svelte';
+
 	import Button from '$lib/components/Button.svelte';
 	import Card from '$lib/components/Card.svelte';
 
-	const onClickItem = () => {};
+	export let active = 0;
+
+	export let items = [];
+
+	const dispatch = createEventDispatcher();
+
+	const onClickItem = (nextActive) => dispatch('change', { active: nextActive });
+
+	const onGetStarted = () => console.log('get started');
+
+	$: current = items[active];
 </script>
 
 <div class="splash">
 	<Card customClass="splash-card" radius="lg">
 		<div class="splash-card-inner">
-			<div class="navy-dark text-center title-4 fw-600 mb-4">Welcome to<br /> MOVE by Mamamia</div>
+			<div class="navy-dark text-center title-4 fw-600 mb-4">
+				{@html current.title}
+			</div>
 			<div class="text-center body gray-8 mb-6">
-				Eleifend tellus enim vitae viverra sodales. Blandit sed quam tincidunt risus malesuada
-				tincidunt. Luctus.
+				{current.description}
 			</div>
 			<ul class="splash-dots">
-				<li><a href="/" on:click|preventDefault={() => onClickItem(1)} class="active">1</a></li>
-				<li><a href="/" on:click|preventDefault={() => onClickItem(2)}>2</a></li>
-				<li><a href="/" on:click|preventDefault={() => onClickItem(3)}>3</a></li>
+				{#each items as _, i}
+					<li>
+						<a href="/" on:click|preventDefault={() => onClickItem(i)} class:active={active === i}
+							>{i}</a
+						>
+					</li>
+				{/each}
 			</ul>
 			<div class="mb-6" />
-			<Button color="tertiary" size="lg" fullWidth>Get Started</Button>
+			<Button color="tertiary" size="lg" fullWidth on:click={onGetStarted}>Get Started</Button>
 		</div>
 	</Card>
 </div>
@@ -60,6 +78,7 @@
 		height: 8px;
 		background-color: var(--coral-light);
 		border-radius: 50%;
+		transition: width 100ms ease-in-out;
 	}
 
 	.splash-dots li a:hover {
@@ -79,5 +98,6 @@
 		width: 100%;
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
+		transition: height 100ms ease-in-out;
 	}
 </style>
