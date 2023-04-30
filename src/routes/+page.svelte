@@ -81,10 +81,17 @@
 		margin: 0;
 		padding: 0;
 		display: flex;
+		width: 100vw;
+		overflow-x: auto;
 	}
 	.demo-list li a {
 		display: flex;
 		padding: 5px;
 		border: solid 1px var(--navy);
+		min-width: 120px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
 	}
 </style>
