@@ -1,5 +1,5 @@
 <script>
-	import Checkbox from '$lib/components/Checkbox.svelte';
+	import Checkbox from '$lib/components/CheckBox.svelte';
 </script>
 
 <div class="mb-4">
