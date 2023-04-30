@@ -1,4 +1,7 @@
 <script>
+	import { DateInput } from 'date-picker-svelte';
+	import Icon from './Icon.svelte';
+
 	import { classnames } from './utils';
 
 	export let name = '';
@@ -6,7 +9,8 @@
 	export let placeholder = '';
 	export let wrapperClass = '';
 	export let inputClass = '';
-	export let element = 'input';
+
+	let value = new Date();
 
 	$: customWrapperClass = classnames(['text-field', 'br-12', wrapperClass]);
 
@@ -16,17 +20,10 @@
 <div class={customWrapperClass}>
 	<label for={name}>{label}</label>
 	<div class="text-field-input br-12">
-		{#if $$slots.prepend}
-			<div class="text-field-prepend">
-				<slot name="prepend" />
-			</div>
-		{/if}
-		<svelte:element this={element} {placeholder} class={customInputClass} {...$$restProps} />
-		{#if $$slots.append}
-			<div class="text-field-append">
-				<slot name="append" />
-			</div>
-		{/if}
+		<div class="text-field-prepend">
+			<Icon name="calendar" />
+		</div>
+		<DateInput {placeholder} class={customInputClass} {...$$restProps} bind:value />
 	</div>
 	{#if $$slots.message}
 		<div class="text-field-message">
@@ -71,33 +68,5 @@
 	.text-field-input:has(:disabled) {
 		border-color: var(--gray-4);
 		background-color: var(--gray-3);
-	}
-
-	.text-field-input input:disabled,
-	.text-field-input textarea:disabled {
-		color: var(--gray-5);
-	}
-
-	.text-field-input input,
-	.text-field-input textarea {
-		border: none;
-		color: var(--navy-dark);
-		display: inline-flex;
-		font-size: var(--label);
-		font-weight: var(--fw-400);
-		height: 100%;
-		width: 100%;
-	}
-
-	.text-field-input input:focus,
-	.text-field-input textarea:focus {
-		border: none;
-		outline: none;
-	}
-
-	input[type='date']::-webkit-inner-spin-button,
-	input[type='date']::-webkit-calendar-picker-indicator {
-		display: none;
-		-webkit-appearance: none;
 	}
 </style>
