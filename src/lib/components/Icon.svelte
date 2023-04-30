@@ -2,7 +2,6 @@
 	// @ts-nocheck
 	export let name;
 	export let focusable = false;
-	export let fill = 'none';
 
 	let icons = [
 		{

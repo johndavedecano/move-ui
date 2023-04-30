@@ -45,7 +45,7 @@
 		color: var(--navy-dark);
 		font-size: var(--label);
 		font-weight: var(--fw-400);
-		margin-bottom: var(--space-1);
+		margin-bottom: var(--space-3);
 	}
 
 	.text-field-message {

@@ -1,6 +1,5 @@
 <script>
 	// @ts-nocheck
-
 	import '$lib/components/styles.css';
 
 	import Buttons from '$lib/demos/Buttons.svelte';
