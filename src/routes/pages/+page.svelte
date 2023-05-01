@@ -49,6 +49,23 @@
 					</li>
 				</ul>
 			</li>
+			<li>
+				Reset Password
+				<ul>
+					<li>
+						<a href="/pages/resetpassword1">Reset Password 1</a>
+					</li>
+					<li>
+						<a href="/pages/resetpassword2">Reset Password 2</a>
+					</li>
+					<li>
+						<a href="/pages/resetpassword3">Reset Password 3</a>
+					</li>
+					<li>
+						<a href="/pages/resetpassword4">Reset Password 4</a>
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>

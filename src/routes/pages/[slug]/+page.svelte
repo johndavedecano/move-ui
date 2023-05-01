@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import { page } from '$app/stores';
 
 	import Splash from '$lib/demos/Splash.svelte';
@@ -14,6 +16,12 @@
 	import Onboarding10 from '$lib/demos/Onboarding10.svelte';
 	import Onboarding11 from '$lib/demos/Onboarding11.svelte';
 	import Onboarding12 from '$lib/demos/Onboarding12.svelte';
+	// reset password
+	import ResetPassword1 from '$lib/demos/ResetPassword1.svelte';
+	import ResetPassword2 from '$lib/demos/ResetPassword2.svelte';
+	import ResetPassword3 from '$lib/demos/ResetPassword3.svelte';
+	import ResetPassword4 from '$lib/demos/ResetPassword4.svelte';
+
 	$: slug = $page.params.slug;
 
 	$: component =
@@ -30,7 +38,11 @@
 			onboarding9: Onboarding9,
 			onboarding10: Onboarding10,
 			onboarding11: Onboarding11,
-			onboarding12: Onboarding12
+			onboarding12: Onboarding12,
+			resetpassword1: ResetPassword1,
+			resetpassword2: ResetPassword2,
+			resetpassword3: ResetPassword3,
+			resetpassword4: ResetPassword4
 		}[slug] || Splash;
 </script>
 
