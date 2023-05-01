@@ -13,7 +13,7 @@
 	import Onboarding9 from '$lib/demos/Onboarding9.svelte';
 	import Onboarding10 from '$lib/demos/Onboarding10.svelte';
 	import Onboarding11 from '$lib/demos/Onboarding11.svelte';
-
+	import Onboarding12 from '$lib/demos/Onboarding12.svelte';
 	$: slug = $page.params.slug;
 
 	$: component =
@@ -29,7 +29,8 @@
 			onboarding8: Onboarding8,
 			onboarding9: Onboarding9,
 			onboarding10: Onboarding10,
-			onboarding11: Onboarding11
+			onboarding11: Onboarding11,
+			onboarding12: Onboarding12
 		}[slug] || Splash;
 </script>
 

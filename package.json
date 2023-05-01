@@ -44,6 +44,7 @@
 	"type": "module",
 	"dependencies": {
 		"classnames": "^2.3.2",
+		"credit-card-type": "^9.1.0",
 		"date-picker-svelte": "^2.4.2",
 		"flag-icons": "^6.6.6",
 		"svelte-select": "^5.6.0"
