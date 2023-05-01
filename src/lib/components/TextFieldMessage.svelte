@@ -1,7 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	import CheckIcon from '$lib/components/CheckICon.svelte';
+	import CheckIcon from '$lib/components/CheckIcon.svelte';
 
 	import { classnames } from './utils';
 
