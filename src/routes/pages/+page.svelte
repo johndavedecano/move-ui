@@ -5,6 +5,9 @@
 <div class="pages">
 	<ul>
 		<li>
+			<a href="/">Components</a>
+		</li>
+		<li>
 			<a href="/pages/splash">Splash</a>
 		</li>
 		<li>
@@ -64,6 +67,9 @@
 					<a href="/pages/resetpassword4">Reset Password 4</a>
 				</li>
 			</ul>
+		</li>
+		<li class="mt-4">
+			<a href="/pages/checkin">Splash - Checkin</a>
 		</li>
 	</ul>
 </div>

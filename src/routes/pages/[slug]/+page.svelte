@@ -23,6 +23,8 @@
 	import ResetPassword3 from '$lib/demos/ResetPassword3.svelte';
 	import ResetPassword4 from '$lib/demos/ResetPassword4.svelte';
 
+	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
+
 	$: slug = $page.params.slug;
 
 	$: component =
@@ -43,7 +45,8 @@
 			resetpassword1: ResetPassword1,
 			resetpassword2: ResetPassword2,
 			resetpassword3: ResetPassword3,
-			resetpassword4: ResetPassword4
+			resetpassword4: ResetPassword4,
+			checkin: SplashCheckin
 		}[slug] || Splash;
 </script>
 
