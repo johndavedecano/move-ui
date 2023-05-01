@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
@@ -40,7 +42,7 @@
 				</span>
 			</TextField>
 
-			<div class="text-center pt-4 pb-6">
+			<div class="text-center pt-4 pb-8">
 				<span class="caption gray-5">
 					By continuing you agree to the <a href="/" class="coral-dark">terms</a> and
 					<a href="/" class="coral-dark">privacy policy </a>

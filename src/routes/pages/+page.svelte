@@ -41,6 +41,9 @@
 					<li>
 						<a href="/pages/onboarding10">Onboarding 10</a>
 					</li>
+					<li>
+						<a href="/pages/onboarding11">Onboarding 11</a>
+					</li>
 				</ul>
 			</li>
 		</ul>

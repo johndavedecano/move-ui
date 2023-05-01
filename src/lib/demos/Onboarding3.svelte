@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
@@ -38,7 +40,7 @@
 				We protect your data in-line with our <a href="/" class="coral-dark">privacy policy </a>
 			</span>
 		</div>
-		<div class="pb-4 w-100">
+		<div class="w-100">
 			<Button color="tertiary" size="lg" fullWidth>Continue</Button>
 		</div>
 	</svelte:fragment>

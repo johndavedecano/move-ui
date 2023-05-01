@@ -1,6 +1,5 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
-	import DateField from '$lib/components/DateField.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';

@@ -1,4 +1,14 @@
-<div class="wrapper">
+<script>
+	// @ts-nocheck
+
+	import { classnames } from './utils';
+
+	export let wrapperClass;
+
+	$: classes = classnames(['wrapper', wrapperClass]);
+</script>
+
+<div class={wrapperClass}>
 	{#if $$slots.header}
 		<slot name="header" />
 	{/if}
@@ -24,7 +34,6 @@
 <style>
 	.wrapper {
 		--bottom-height: 74px;
-		--top-height: 96px;
 		display: flex;
 		flex-direction: column;
 		height: 100vh;
@@ -35,7 +44,7 @@
 		padding-bottom: var(--bottom-height);
 		padding-left: var(--space-6);
 		padding-right: var(--space-6);
-		padding-top: var(--top-height);
+		padding-top: 96px;
 	}
 	.actions {
 		align-items: center;
@@ -48,6 +57,7 @@
 		left: 0;
 		padding-left: var(--space-6);
 		padding-right: var(--space-6);
+		padding-bottom: var(--space-4);
 		position: fixed;
 		width: 100%;
 	}
