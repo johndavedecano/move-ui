@@ -1,5 +1,6 @@
 <script>
 	// @ts-nocheck
+	import '$lib/components/styles.css';
 
 	import { page } from '$app/stores';
 

@@ -4,6 +4,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import CheckIcon from '$lib/components/CheckIcon.svelte';
 	import CreditCardField from '$lib/components/CreditCardField.svelte';
+	import ExpirationField from '$lib/components/ExpirationField.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';
@@ -69,7 +70,7 @@
 
 			<div class="mb-4 card-details">
 				<div class="flex-1">
-					<TextField label="Expiration" placeholder="MM/YY" />
+					<ExpirationField label="Expiration" placeholder="MM/YY" />
 				</div>
 				<div class="flex-1">
 					<TextField label="Card number" placeholder="123" minLength={3} maxLength={3} />
