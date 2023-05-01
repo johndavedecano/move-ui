@@ -1,15 +1,15 @@
 <script>
-	import Checkbox from '$lib/components/CheckBox.svelte';
+	import CheckBox from '$lib/components/CheckBox.svelte';
 </script>
 
 <div class="mb-4">
-	<Checkbox>Initial State</Checkbox>
+	<CheckBox>Initial State</CheckBox>
 </div>
 
 <div class="mb-4">
-	<Checkbox checked>Checked</Checkbox>
+	<CheckBox checked>Checked</CheckBox>
 </div>
 
 <div class="mb-4">
-	<Checkbox disabled checked>Disabled</Checkbox>
+	<CheckBox disabled checked>Disabled</CheckBox>
 </div>
