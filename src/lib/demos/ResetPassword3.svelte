@@ -1,6 +1,4 @@
 <script>
-	// @ts-nocheck
-
 	import Button from '$lib/components/Button.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
@@ -20,27 +18,18 @@
 		</LoginHeader>
 	</svelte:fragment>
 	<svelte:fragment slot="content">
-		<div class="title-5 navy-dark fw-600 mb-2">Enter your password</div>
-		<div class="gray-6 body fw-400 mb-8">
-			Quis ipsum eget ut commodo tristique tristique malesuada augue sed.
-		</div>
+		<div class="title-5 navy-dark fw-600 mb-8">Enter new password</div>
 		<form action="">
 			<TextField label="Password" name="password" type="password" value="12345678">
 				<span slot="append">
 					<Icon name="eye" />
 				</span>
 				<span slot="message">
-					<TextFieldMessage customClass="pt-2">At least 8 characters</TextFieldMessage>
+					<TextFieldMessage iconColor="success" textColor="success" customClass="pt-2"
+						>At least 8 characters</TextFieldMessage
+					>
 				</span>
 			</TextField>
-			<div class="pt-6">
-				<Checkbox>
-					<span class="caption navy-dark">
-						I have read and agree to the <a href="/" class="coral-dark">terms</a> and
-						<a href="/" class="coral-dark">privacy policy </a>
-					</span>
-				</Checkbox>
-			</div>
 		</form>
 	</svelte:fragment>
 	<svelte:fragment slot="actions">

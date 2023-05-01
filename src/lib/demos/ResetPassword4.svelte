@@ -11,39 +11,16 @@
 </script>
 
 <LoginWrapper>
-	<svelte:fragment slot="header">
-		<LoginHeader>
-			<a href="/pages/onboarding1" slot="prepend">
-				<Icon name="arrow-left" />
-			</a>
-			<div class="pr-6" slot="append" />
-		</LoginHeader>
-	</svelte:fragment>
 	<svelte:fragment slot="content">
-		<div class="title-5 navy-dark fw-600 mb-2">Enter your password</div>
-		<div class="gray-6 body fw-400 mb-8">
-			Quis ipsum eget ut commodo tristique tristique malesuada augue sed.
+		<div class="text-center mb-4 mt-32">
+			<img src="/password-updated.png" alt="" class="mx-auto" />
 		</div>
-		<form action="">
-			<TextField label="Password" name="password" type="password" value="12345678">
-				<span slot="append">
-					<Icon name="eye" />
-				</span>
-				<span slot="message">
-					<TextFieldMessage customClass="pt-2">At least 8 characters</TextFieldMessage>
-				</span>
-			</TextField>
-			<div class="pt-6">
-				<Checkbox>
-					<span class="caption navy-dark">
-						I have read and agree to the <a href="/" class="coral-dark">terms</a> and
-						<a href="/" class="coral-dark">privacy policy </a>
-					</span>
-				</Checkbox>
-			</div>
-		</form>
+		<div class="title-4 navy-dark fw-600 mb-2 text-center">Password reset link sent</div>
+		<div class="gray-6 body fw-400 mb-8 text-center">
+			Your password has been successfully changed
+		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="actions">
-		<Button color="tertiary" size="lg" fullWidth>Continue</Button>
+		<Button color="tertiary" size="lg" fullWidth>Back to Home</Button>
 	</svelte:fragment>
 </LoginWrapper>
