@@ -133,13 +133,11 @@
 		background-color: var(--gray-3);
 	}
 
-	.expiration-field-input input:disabled,
-	.expiration-field-input textarea:disabled {
+	.expiration-field-input input:disabled {
 		color: var(--gray-5);
 	}
 
-	.expiration-field-input input,
-	.expiration-field-input textarea {
+	.expiration-field-input input {
 		border: none;
 		color: var(--navy-dark);
 		display: inline-flex;
@@ -149,15 +147,8 @@
 		width: 100%;
 	}
 
-	.expiration-field-input input:focus,
-	.expiration-field-input textarea:focus {
+	.expiration-field-input input:focus {
 		border: none;
 		outline: none;
-	}
-
-	input[type='date']::-webkit-inner-spin-button,
-	input[type='date']::-webkit-calendar-picker-indicator {
-		display: none;
-		-webkit-appearance: none;
 	}
 </style>

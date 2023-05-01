@@ -101,10 +101,4 @@
 		border-color: var(--gray-4);
 		background-color: var(--gray-3);
 	}
-
-	input[type='date']::-webkit-inner-spin-button,
-	input[type='date']::-webkit-calendar-picker-indicator {
-		display: none;
-		-webkit-appearance: none;
-	}
 </style>
