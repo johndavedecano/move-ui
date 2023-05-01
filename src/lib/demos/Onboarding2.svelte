@@ -5,7 +5,7 @@
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';
 	import TextField from '$lib/components/TextField.svelte';
 	import TextFieldMessage from '$lib/components/TextFieldMessage.svelte';
-	import Checkbox from '$lib/components/CheckBox.svelte';
+	import Checkbox from '$lib/components/Checkbox.svelte';
 </script>
 
 <LoginWrapper>
