@@ -28,7 +28,7 @@
 				We protect your data in-line with our <a href="/" class="coral-dark">privacy policy </a>
 			</span>
 		</div>
-		<div class=" w-100">
+		<div class="w-100">
 			<Button color="tertiary" size="lg" fullWidth>Continue</Button>
 		</div>
 	</svelte:fragment>
