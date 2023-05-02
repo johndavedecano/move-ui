@@ -2,8 +2,6 @@
 	// @ts-nocheck
 	import Card from '$lib/components/Card.svelte';
 	import Button from '$lib/components/Button.svelte';
-	import Icon from '$lib/components/Icon.svelte';
-	import CheckIcon from '$lib/components/CheckIcon.svelte';
 	import EmotionList from '$lib/components/EmotionList.svelte';
 
 	let active = 1;

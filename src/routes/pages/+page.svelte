@@ -71,6 +71,9 @@
 		<li class="mt-4">
 			<a href="/pages/checkin">Splash - Checkin</a>
 		</li>
+		<li class="mt-4">
+			<a href="/pages/misc">Misc - Others</a>
+		</li>
 	</ul>
 </div>
 

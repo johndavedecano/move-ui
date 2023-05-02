@@ -24,6 +24,7 @@
 	import ResetPassword4 from '$lib/demos/ResetPassword4.svelte';
 
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
+	import Misc from '$lib/demos/Misc.svelte';
 
 	$: slug = $page.params.slug;
 
@@ -46,7 +47,8 @@
 			resetpassword2: ResetPassword2,
 			resetpassword3: ResetPassword3,
 			resetpassword4: ResetPassword4,
-			checkin: SplashCheckin
+			checkin: SplashCheckin,
+			misc: Misc
 		}[slug] || Splash;
 </script>
 
