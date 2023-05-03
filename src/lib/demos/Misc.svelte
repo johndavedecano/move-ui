@@ -4,6 +4,7 @@
 	import Exercises from '$lib/components/Exercises.svelte';
 	import Intensity from '$lib/components/Intensity.svelte';
 	import Duration from '$lib/components/Duration.svelte';
+	import SortList from '$lib/components/SortList.svelte';
 </script>
 
 <div class="mb-4">
@@ -24,4 +25,8 @@
 
 <div class="mb-4">
 	<Duration />
+</div>
+
+<div class="mb-4">
+	<SortList />
 </div>
