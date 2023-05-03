@@ -74,6 +74,7 @@
 		border-radius: 8px;
 		border: solid 1px var(--gray-4);
 		padding: 12px 16px;
+		user-select: none;
 	}
 
 	.intensity-item-box {

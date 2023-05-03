@@ -70,6 +70,7 @@
 		flex: 1;
 		cursor: pointer;
 		text-align: center;
+		user-select: none;
 	}
 
 	.exercises-item-box {

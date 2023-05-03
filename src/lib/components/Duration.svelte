@@ -65,5 +65,6 @@
 		border: solid 1px var(--gray-4);
 		padding: 12px 16px;
 		background-color: var(--white);
+		user-select: none;
 	}
 </style>

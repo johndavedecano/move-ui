@@ -41,6 +41,10 @@
 </Card>
 
 <style>
+	:global(.gender-list-item) {
+		user-select: none;
+	}
+
 	.gender-list-item-content {
 		display: flex;
 		flex-direction: row;

@@ -10,6 +10,12 @@
 		<li>
 			<a href="/pages/splash">Splash</a>
 		</li>
+		<li class="mt-4">
+			<a href="/pages/checkin">Splash - Checkin</a>
+		</li>
+		<li class="mt-4">
+			<a href="/pages/misc">Misc - Others</a>
+		</li>
 		<li>
 			<div class="header">Onboarding</div>
 			<ul>
@@ -67,12 +73,6 @@
 					<a href="/pages/resetpassword4">Reset Password 4</a>
 				</li>
 			</ul>
-		</li>
-		<li class="mt-4">
-			<a href="/pages/checkin">Splash - Checkin</a>
-		</li>
-		<li class="mt-4">
-			<a href="/pages/misc">Misc - Others</a>
 		</li>
 	</ul>
 </div>
