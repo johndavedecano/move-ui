@@ -74,6 +74,23 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<div class="header">Magic Link</div>
+			<ul>
+				<li>
+					<a href="/pages/magiclink1">Magic Link 1</a>
+				</li>
+				<li>
+					<a href="/pages/magiclink2">Magic Link 2</a>
+				</li>
+				<li>
+					<a href="/pages/magiclink3">Magic Link 3</a>
+				</li>
+				<li>
+					<a href="/pages/magiclink4">Magic Link 4</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 

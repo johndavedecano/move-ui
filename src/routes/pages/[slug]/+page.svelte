@@ -22,6 +22,11 @@
 	import ResetPassword2 from '$lib/demos/ResetPassword2.svelte';
 	import ResetPassword3 from '$lib/demos/ResetPassword3.svelte';
 	import ResetPassword4 from '$lib/demos/ResetPassword4.svelte';
+	// magic link
+	import MagicLink1 from '$lib/demos/MagicLink1.svelte';
+	import MagicLink2 from '$lib/demos/MagicLink2.svelte';
+	import MagicLink3 from '$lib/demos/MagicLink3.svelte';
+	import MagicLink4 from '$lib/demos/MagicLink4.svelte';
 
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
 	import Misc from '$lib/demos/Misc.svelte';
@@ -47,6 +52,10 @@
 			resetpassword2: ResetPassword2,
 			resetpassword3: ResetPassword3,
 			resetpassword4: ResetPassword4,
+			magiclink1: MagicLink1,
+			magiclink2: MagicLink2,
+			magiclink3: MagicLink3,
+			magiclink4: MagicLink4,
 			checkin: SplashCheckin,
 			misc: Misc
 		}[slug] || Splash;
