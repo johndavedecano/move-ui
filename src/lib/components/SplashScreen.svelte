@@ -18,7 +18,7 @@
 	$: current = items[active];
 </script>
 
-<div class="splash">
+<div class="splash" style="--background-image: url({current.background});">
 	<Card customClass="splash-card" radius="lg">
 		<div class="splash-card-inner">
 			<div class="navy-dark text-center title-4 fw-600 mb-4">
@@ -51,6 +51,7 @@
 		background-size: contain;
 		background-position-y: top;
 		background-position-x: center;
+		background-image: var(--background-image);
 	}
 
 	.splash-card-inner {

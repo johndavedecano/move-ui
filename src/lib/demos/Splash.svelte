@@ -11,17 +11,20 @@
 		{
 			title: 'Welcome to <br />MOVE by Mamamia',
 			// prettier-ignore
-			description: 'Eleifend tellus enim vitae viverra sodales. Blandit sed quam tincidunt risus malesuada tincidunt. Luctus.'
+			description: 'Eleifend tellus enim vitae viverra sodales. Blandit sed quam tincidunt risus malesuada tincidunt. Luctus.',
+			background: '/splash-1.png'
 		},
 		{
 			title: 'For all body types',
 			// prettier-ignore
-			description: 'Enjoy new videos everyday eu a odio libero venenatis risus. Starting from $7.99 a month'
+			description: 'Enjoy new videos everyday eu a odio libero venenatis risus. Starting from $7.99 a month',
+			background: '/splash-2.png'
 		},
 		{
-			title: 'Welcome to <br />MOVE by Mamamia',
+			title: 'For all body types',
 			// prettier-ignore
-			description: 'Eleifend tellus enim vitae viverra sodales. Blandit sed quam tincidunt risus malesuada tincidunt. Luctus.'
+			description: 'Enjoy new videos everyday eu a odio libero venenatis risus. Starting from $7.99 a month',
+			background: '/splash-2.png'
 		}
 	];
 
