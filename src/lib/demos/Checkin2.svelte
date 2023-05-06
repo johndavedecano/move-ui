@@ -3,20 +3,14 @@
 	import Card from '$lib/components/Card.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import EmotionList from '$lib/components/EmotionList.svelte';
+
+	let active = 1;
 </script>
 
 <div class="wrapper">
 	<Card customClass="unli-access" radius="lg" shadow="md">
 		<div class="unli-access-inner">
 			<div class="title-6 fw-500 text-center black mb-4">How are you feeling?</div>
-
-			<div class="mb-4">
-				<EmotionList />
-			</div>
-
-			<Button element="a" color="gray-5" size="lg" variant="flat" customClass="skip" fullWidth
-				>Skip</Button
-			>
 		</div>
 	</Card>
 </div>
@@ -32,7 +26,7 @@
 		background-position-x: center;
 		background-image: url('/checkin.png');
 		background-size: cover;
-		background-position: center center;
+		background-position: top center;
 
 		--default-icon-bg: #ebebeb;
 	}

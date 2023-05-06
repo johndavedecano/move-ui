@@ -4,8 +4,6 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';
-	import TextField from '$lib/components/TextField.svelte';
-	import TextFieldMessage from '$lib/components/TextFieldMessage.svelte';
 </script>
 
 <LoginWrapper>

@@ -1,22 +1,17 @@
 <script>
 	// @ts-nocheck
 	import Card from '$lib/components/Card.svelte';
-	import Button from '$lib/components/Button.svelte';
-	import EmotionList from '$lib/components/EmotionList.svelte';
 </script>
 
 <div class="wrapper">
 	<Card customClass="unli-access" radius="lg" shadow="md">
+		<div class="unli-access-img">
+			<img src="/dance.png" alt="" class="dancing" />
+		</div>
 		<div class="unli-access-inner">
-			<div class="title-6 fw-500 text-center black mb-4">How are you feeling?</div>
-
-			<div class="mb-4">
-				<EmotionList />
-			</div>
-
-			<Button element="a" color="gray-5" size="lg" variant="flat" customClass="skip" fullWidth
-				>Skip</Button
-			>
+			<img src="/hi.png" alt="" class="mx-auto" />
+			<div class="title-4 fw-600 text-center navy-dark mb-4">Hi Carla!</div>
+			<div class="text-center gray-8 fw-400">So nice to see you today :)</div>
 		</div>
 	</Card>
 </div>
@@ -28,13 +23,23 @@
 		background-color: var(--grape-light);
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position-y: top;
-		background-position-x: center;
-		background-image: url('/checkin.png');
-		background-size: cover;
-		background-position: center center;
+		background-position: center;
+		background-image: url('/everybody.png');
 
 		--default-icon-bg: #ebebeb;
+	}
+
+	.unli-access-img {
+		position: absolute;
+		z-index: 11;
+		bottom: 320px;
+		left: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 1;
+		transition: all 200ms ease-in-out;
 	}
 
 	:global(.unli-access-inner a.btn) {
@@ -43,7 +48,7 @@
 	}
 
 	.unli-access-inner {
-		padding: 32px 27.5px 32px 27.5px;
+		padding: 123px 27.5px 123px 27.5px;
 	}
 
 	:global(.unli-access) {
@@ -54,5 +59,6 @@
 		border-bottom-left-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 		transition: height 100ms ease-in-out;
+		z-index: 10;
 	}
 </style>

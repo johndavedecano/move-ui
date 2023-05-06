@@ -1,7 +1,6 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
 	import CountrySelect from '$lib/components/CountrySelect.svelte';
-	import GenderList from '$lib/components/GenderList.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';

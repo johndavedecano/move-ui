@@ -28,6 +28,9 @@
 	import MagicLink3 from '$lib/demos/MagicLink3.svelte';
 	import MagicLink4 from '$lib/demos/MagicLink4.svelte';
 
+	import Checkin1 from '$lib/demos/Checkin1.svelte';
+	import Checkin2 from '$lib/demos/Checkin2.svelte';
+
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
 	import Misc from '$lib/demos/Misc.svelte';
 
@@ -57,6 +60,8 @@
 			magiclink3: MagicLink3,
 			magiclink4: MagicLink4,
 			checkin: SplashCheckin,
+			checkin1: Checkin1,
+			checkin2: Checkin2,
 			misc: Misc
 		}[slug] || Splash;
 </script>

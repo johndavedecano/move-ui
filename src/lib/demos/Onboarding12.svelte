@@ -5,11 +5,9 @@
 	import CheckIcon from '$lib/components/CheckIcon.svelte';
 	import CreditCardField from '$lib/components/CreditCardField.svelte';
 	import ExpirationField from '$lib/components/ExpirationField.svelte';
-	import Icon from '$lib/components/Icon.svelte';
 	import LoginHeader from '$lib/components/LoginHeader.svelte';
 	import LoginWrapper from '$lib/components/LoginWrapper.svelte';
 	import TextField from '$lib/components/TextField.svelte';
-	import TextFieldMessage from '$lib/components/TextFieldMessage.svelte';
 </script>
 
 <LoginWrapper>

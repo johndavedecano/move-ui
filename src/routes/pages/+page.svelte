@@ -91,6 +91,17 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<div class="header">Checkin</div>
+			<ul>
+				<li>
+					<a href="/pages/checkin1">Checkin 1</a>
+				</li>
+				<li>
+					<a href="/pages/checkin2">Checkin 2</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
