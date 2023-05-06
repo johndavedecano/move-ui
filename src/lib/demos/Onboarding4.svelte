@@ -1,4 +1,6 @@
 <script>
+	// @ts-nocheck
+
 	import Button from '$lib/components/Button.svelte';
 	import GenderList from '$lib/components/GenderList.svelte';
 	import Icon from '$lib/components/Icon.svelte';

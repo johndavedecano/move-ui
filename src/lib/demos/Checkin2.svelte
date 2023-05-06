@@ -1,52 +1,35 @@
 <script>
 	// @ts-nocheck
-	import Card from '$lib/components/Card.svelte';
-	import Button from '$lib/components/Button.svelte';
-	import EmotionList from '$lib/components/EmotionList.svelte';
 
-	let active = 1;
+	import Button from '$lib/components/Button.svelte';
+	import HeartList from '$lib/components/HeartList.svelte';
+	import Icon from '$lib/components/Icon.svelte';
+	import LoginHeader from '$lib/components/LoginHeader.svelte';
+	import LoginWrapper from '$lib/components/LoginWrapper.svelte';
 </script>
 
-<div class="wrapper">
-	<Card customClass="unli-access" radius="lg" shadow="md">
-		<div class="unli-access-inner">
-			<div class="title-6 fw-500 text-center black mb-4">How are you feeling?</div>
+<LoginWrapper>
+	<svelte:fragment slot="header">
+		<LoginHeader>
+			<a href="/pages/onboarding1" slot="prepend">
+				<Icon name="arrow-left" />
+			</a>
+			<div class="pr-6" slot="append" />
+		</LoginHeader>
+	</svelte:fragment>
+	<svelte:fragment slot="content">
+		<div style="padding-bottom: 50px;">
+			<div class="title-5 navy-dark fw-600 mb-2 text-center">What are you looking for today?</div>
+			<div class="body gray-6 mb-4 fw-400 text-center">Select all that are relevant</div>
+			<HeartList />
 		</div>
-	</Card>
-</div>
-
-<style>
-	.wrapper {
-		width: 100%;
-		height: 100vh;
-		background-color: var(--grape-light);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position-y: top;
-		background-position-x: center;
-		background-image: url('/checkin.png');
-		background-size: cover;
-		background-position: top center;
-
-		--default-icon-bg: #ebebeb;
-	}
-
-	:global(.unli-access-inner a.btn) {
-		color: var(--gray-7);
-		font-weight: 500;
-	}
-
-	.unli-access-inner {
-		padding: 32px 27.5px 32px 27.5px;
-	}
-
-	:global(.unli-access) {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		border-bottom-left-radius: 0 !important;
-		border-bottom-right-radius: 0 !important;
-		transition: height 100ms ease-in-out;
-	}
-</style>
+	</svelte:fragment>
+	<svelte:fragment slot="actions">
+		<div class="w-100 mb-4">
+			<Button color="tertiary" size="lg" fullWidth>Let's Go!</Button>
+		</div>
+		<div class="w-100">
+			<Button color="tertiary" variant="flat" size="lg" fullWidth>Skip</Button>
+		</div>
+	</svelte:fragment>
+</LoginWrapper>
