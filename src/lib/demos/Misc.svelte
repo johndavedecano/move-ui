@@ -5,6 +5,13 @@
 	import Intensity from '$lib/components/Intensity.svelte';
 	import Duration from '$lib/components/Duration.svelte';
 	import SortList from '$lib/components/SortList.svelte';
+	import Overlay from '$lib/components/Overlay.svelte';
+	import Button from '$lib/components/Button.svelte';
+	import Card from '$lib/components/Card.svelte';
+
+	let overlay = false;
+
+	$: console.log({ overlay });
 </script>
 
 <div class="mb-4">
@@ -29,4 +36,9 @@
 
 <div class="mb-4">
 	<SortList />
+</div>
+
+<div class="mb-4 text-center">
+	<Overlay show={overlay} on:close={() => (overlay = false)} />
+	<Button color="secondary" size="md" on:click={() => (overlay = !overlay)}>Toggle Overlay</Button>
 </div>

@@ -43,7 +43,16 @@
 	]);
 </script>
 
-<svelte:element this={element} {...$$restProps} class={classes}>
+<!-- svelte-ignore a11y-mouse-events-have-key-events -->
+<svelte:element
+	this={element}
+	{...$$restProps}
+	class={classes}
+	on:click
+	on:mouseover
+	on:mouseenter
+	on:mouseleave
+>
 	<slot />
 </svelte:element>
 
