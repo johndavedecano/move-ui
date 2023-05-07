@@ -8,6 +8,7 @@
 	import Overlay from '$lib/components/Overlay.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import WorkoutItem from '$lib/components/WorkoutItem.svelte';
 
 	let overlay = false;
 
@@ -41,4 +42,29 @@
 <div class="mb-4 text-center">
 	<Overlay show={overlay} on:close={() => (overlay = false)} />
 	<Button color="secondary" size="md" on:click={() => (overlay = !overlay)}>Toggle Overlay</Button>
+</div>
+
+<div class="mb-2">
+	<WorkoutItem direction="horizonal" />
+</div>
+
+<div class="mb-2">
+	<WorkoutItem direction="horizonal" />
+</div>
+
+<div class="mb-2">
+	<WorkoutItem direction="horizonal" />
+</div>
+
+<div class="mb-4">
+	<WorkoutItem direction="horizonal" />
+</div>
+
+<div class="mb-4">
+	<div class="flex">
+		<WorkoutItem direction="vertical" />
+		<WorkoutItem direction="vertical" />
+		<WorkoutItem direction="vertical" />
+		<WorkoutItem direction="vertical" />
+	</div>
 </div>
