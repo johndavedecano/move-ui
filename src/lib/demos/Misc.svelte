@@ -9,6 +9,9 @@
 	import Button from '$lib/components/Button.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import WorkoutItem from '$lib/components/WorkoutItem.svelte';
+	import SectionHeader from '$lib/components/SectionHeader.svelte';
+	import Icon from '$lib/components/Icon.svelte';
+	import Collections from '$lib/components/Collections.svelte';
 
 	let overlay = false;
 
@@ -44,27 +47,86 @@
 	<Button color="secondary" size="md" on:click={() => (overlay = !overlay)}>Toggle Overlay</Button>
 </div>
 
-<div class="mb-2">
-	<WorkoutItem direction="horizonal" />
+<div class="p-4">
+	<SectionHeader title="Recent" subtitle="Workouts you completed recently." />
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-4">
+		<WorkoutItem direction="horizonal" />
+	</div>
 </div>
 
-<div class="mb-2">
-	<WorkoutItem direction="horizonal" />
-</div>
+<div class="p-4">
+	<SectionHeader title="Recommended" subtitle="Based on how you're feeling right now." />
 
-<div class="mb-2">
-	<WorkoutItem direction="horizonal" />
-</div>
-
-<div class="mb-4">
-	<WorkoutItem direction="horizonal" />
-</div>
-
-<div class="mb-4">
-	<div class="flex">
+	<div class="flex" style="gap: 16px;">
 		<WorkoutItem direction="vertical" />
 		<WorkoutItem direction="vertical" />
 		<WorkoutItem direction="vertical" />
 		<WorkoutItem direction="vertical" />
+	</div>
+</div>
+
+<div class="p-4">
+	<SectionHeader title="Recent" subtitle="Workouts you completed recently.">
+		<svelte:fragment slot="action">
+			<a
+				href="/"
+				on:click|preventDefault={() => console.log('sorting...')}
+				class="fw-600 navy-dark label"
+			>
+				<span class="mr-2">Sort</span>
+				<Icon name="sort" />
+			</a>
+		</svelte:fragment>
+	</SectionHeader>
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-2">
+		<WorkoutItem direction="horizonal" />
+	</div>
+
+	<div class="mb-4">
+		<WorkoutItem direction="horizonal" />
+	</div>
+</div>
+
+<div class="p-4">
+	<SectionHeader
+		title="Collections"
+		subtitle="Playlists of workouts curated around specific needs."
+	>
+		<svelte:fragment slot="action">
+			<a
+				href="/"
+				on:click|preventDefault={() => console.log('sorting...')}
+				class="fw-600 navy-dark label"
+			>
+				<span class="mr-2">Sort</span>
+				<Icon name="sort" />
+			</a>
+		</svelte:fragment>
+	</SectionHeader>
+
+	<div class="pt-4">
+		<Collections />
 	</div>
 </div>
