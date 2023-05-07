@@ -1,10 +1,14 @@
 <script>
+	import { faker } from '@faker-js/faker';
+
 	import Avatar from './Avatar.svelte';
+
+	export let direction = 'horizontal';
 
 	let items = Array.from(new Array(9));
 </script>
 
-<div class="trainer">
+<div class="trainer" class:vertical={direction === 'vertical'}>
 	<div class="trainer-items">
 		{#each items as _, i}
 			<a class="trainer-item" href="/">
@@ -14,8 +18,12 @@
 					height="80"
 					alt="Paul"
 				/>
-				<span class="caption text-center navy-dark fw-500 trainer-name">
-					Paul {i}
+				<span
+					class=" text-center navy-dark fw-500 trainer-name"
+					class:caption={direction !== 'vertical'}
+					class:label={direction === 'horizonal'}
+				>
+					{faker.name.fullName()}
 				</span>
 			</a>
 		{/each}
@@ -41,8 +49,22 @@
 	}
 
 	.trainer-name {
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
+		white-space: break-spaces;
+	}
+
+	.trainer.vertical {
+		overflow-x: visible;
+		overflow-y: auto;
+	}
+
+	.trainer.vertical .trainer-items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.trainer.vertical .trainer-items .trainer-item {
+		flex-direction: row;
+		gap: 16px;
+		align-items: center;
 	}
 </style>

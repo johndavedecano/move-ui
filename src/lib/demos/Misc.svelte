@@ -128,9 +128,17 @@
 </div>
 
 <div class="p-4">
-	<SectionHeader title="Trainers" />
+	<SectionHeader title="Horizonal Trainers" />
 
 	<div class="pt-4">
 		<Trainers />
+	</div>
+</div>
+
+<div class="p-4">
+	<SectionHeader title="Vertical Trainers" />
+
+	<div class="pt-4">
+		<Trainers direction="vertical" />
 	</div>
 </div>
