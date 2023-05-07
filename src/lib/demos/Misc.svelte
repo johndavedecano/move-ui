@@ -16,6 +16,7 @@
 	import CollectionItems from '$lib/components/CollectionItems.svelte';
 	import ImageSlider from '$lib/components/ImageSlider.svelte';
 	import NavMenu from '$lib/components/NavMenu.svelte';
+	import ProfileMenu from '$lib/components/ProfileMenu.svelte';
 
 	let overlay = false;
 
@@ -158,3 +159,9 @@
 </div>
 
 <NavMenu />
+
+<div class="p-4">
+	<ProfileMenu />
+</div>
+
+<div class="pl-16" style="height: 90px;" />
