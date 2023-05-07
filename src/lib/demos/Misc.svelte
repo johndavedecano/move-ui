@@ -7,7 +7,6 @@
 	import SortList from '$lib/components/SortList.svelte';
 	import Overlay from '$lib/components/Overlay.svelte';
 	import Button from '$lib/components/Button.svelte';
-	import Card from '$lib/components/Card.svelte';
 	import WorkoutItem from '$lib/components/WorkoutItem.svelte';
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import Icon from '$lib/components/Icon.svelte';
