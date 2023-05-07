@@ -2,6 +2,7 @@
 	import Icon from './Icon.svelte';
 	import MenuList from './MenuList.svelte';
 	import MenuListItem from './MenuListItem.svelte';
+	import Switch from './Switch.svelte';
 
 	let items = [
 		{
@@ -37,7 +38,7 @@
 	{#each items as item}
 		<MenuListItem title={item.title} href={item.href} subtitle={item.subtitle}>
 			{#if item.key === 'apple-health'}
-				<span>switch</span>
+				<Switch />
 			{:else}
 				<Icon name="chevron-right" />
 			{/if}

@@ -26,6 +26,10 @@
 		border-bottom: none;
 	}
 
+	li.menu-list-item a:visited {
+		color: var(--navy-dark);
+	}
+
 	li.menu-list-item a {
 		display: flex;
 		flex-direction: column;
