@@ -4,14 +4,13 @@
 
 	import Button from '$lib/components/Button.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import DotNav from './DotNav.svelte';
 
 	export let active = 0;
 
 	export let items = [];
 
 	const dispatch = createEventDispatcher();
-
-	const onClickItem = (nextActive) => dispatch('change', { active: nextActive });
 
 	const onGetStarted = () => console.log('get started');
 
@@ -27,15 +26,11 @@
 			<div class="text-center body gray-8 mb-6">
 				{current.description}
 			</div>
-			<ul class="splash-dots">
-				{#each items as _, i}
-					<li>
-						<a href="/" on:click|preventDefault={() => onClickItem(i)} class:active={active === i}
-							>{i}</a
-						>
-					</li>
-				{/each}
-			</ul>
+			<DotNav
+				{active}
+				{items}
+				on:change={(evt) => dispatch('change', { active: evt.detail.active })}
+			/>
 			<div class="mb-6" />
 			<Button color="tertiary" size="lg" fullWidth on:click={onGetStarted}>Get Started</Button>
 		</div>

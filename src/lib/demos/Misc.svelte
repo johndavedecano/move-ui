@@ -14,6 +14,7 @@
 	import WorkoutListVertical from '$lib/components/WorkoutListVertical.svelte';
 	import Trainers from '$lib/components/Trainers.svelte';
 	import CollectionItems from '$lib/components/CollectionItems.svelte';
+	import ImageSlider from '$lib/components/ImageSlider.svelte';
 
 	let overlay = false;
 
@@ -144,5 +145,13 @@
 
 	<div class="pt-4">
 		<Trainers direction="vertical" />
+	</div>
+</div>
+
+<div class="p-4">
+	<SectionHeader title="Image Slider" />
+
+	<div class="pt-4">
+		<ImageSlider />
 	</div>
 </div>
