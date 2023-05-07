@@ -53,40 +53,6 @@
 		padding: 32px 27.5px 32px 27.5px;
 	}
 
-	.splash-dots {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		gap: 4px;
-	}
-
-	.splash-dots li {
-		margin: 0;
-		padding: 0;
-	}
-
-	.splash-dots li a {
-		font-size: 0;
-		display: block;
-		width: 8px;
-		height: 8px;
-		background-color: var(--coral-light);
-		border-radius: 50%;
-		transition: width 100ms ease-in-out;
-	}
-
-	.splash-dots li a:hover {
-		background-color: var(--coral);
-	}
-
-	.splash-dots li a.active {
-		background-color: var(--coral-dark);
-		width: 24px;
-		border-radius: 8px;
-	}
-
 	:global(.splash-card) {
 		position: absolute;
 		bottom: 0;

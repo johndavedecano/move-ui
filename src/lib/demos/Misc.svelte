@@ -15,6 +15,7 @@
 	import Trainers from '$lib/components/Trainers.svelte';
 	import CollectionItems from '$lib/components/CollectionItems.svelte';
 	import ImageSlider from '$lib/components/ImageSlider.svelte';
+	import NavMenu from '$lib/components/NavMenu.svelte';
 
 	let overlay = false;
 
@@ -155,3 +156,5 @@
 		<ImageSlider />
 	</div>
 </div>
+
+<NavMenu />
