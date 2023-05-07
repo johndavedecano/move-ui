@@ -13,6 +13,7 @@
 	import Collections from '$lib/components/Collections.svelte';
 	import WorkoutListVertical from '$lib/components/WorkoutListVertical.svelte';
 	import Trainers from '$lib/components/Trainers.svelte';
+	import CollectionItems from '$lib/components/CollectionItems.svelte';
 
 	let overlay = false;
 
@@ -124,6 +125,9 @@
 
 	<div class="pt-4">
 		<Collections />
+		<div class="pt-4">
+			<CollectionItems />
+		</div>
 	</div>
 </div>
 
