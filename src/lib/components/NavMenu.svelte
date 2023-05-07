@@ -76,7 +76,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 92px;
-		position: sticky;
+		position: fixed;
 		bottom: 0;
 		left: 0;
 		background-color: var(--white);
