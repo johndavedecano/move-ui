@@ -11,6 +11,8 @@
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import Collections from '$lib/components/Collections.svelte';
+	import WorkoutListVertical from '$lib/components/WorkoutListVertical.svelte';
+	import Trainers from '$lib/components/Trainers.svelte';
 
 	let overlay = false;
 
@@ -49,15 +51,15 @@
 <div class="p-4">
 	<SectionHeader title="Recent" subtitle="Workouts you completed recently." />
 
-	<div class="mb-2">
+	<div class="mb-4 mt-6">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
-	<div class="mb-2">
+	<div class="mb-4">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
-	<div class="mb-2">
+	<div class="mb-4">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
@@ -69,12 +71,7 @@
 <div class="p-4">
 	<SectionHeader title="Recommended" subtitle="Based on how you're feeling right now." />
 
-	<div class="flex" style="gap: 16px;">
-		<WorkoutItem direction="vertical" />
-		<WorkoutItem direction="vertical" />
-		<WorkoutItem direction="vertical" />
-		<WorkoutItem direction="vertical" />
-	</div>
+	<WorkoutListVertical />
 </div>
 
 <div class="p-4">
@@ -91,15 +88,15 @@
 		</svelte:fragment>
 	</SectionHeader>
 
-	<div class="mb-2">
+	<div class="mb-4 mt-6">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
-	<div class="mb-2">
+	<div class="mb-4">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
-	<div class="mb-2">
+	<div class="mb-4">
 		<WorkoutItem direction="horizonal" />
 	</div>
 
@@ -127,5 +124,13 @@
 
 	<div class="pt-4">
 		<Collections />
+	</div>
+</div>
+
+<div class="p-4">
+	<SectionHeader title="Trainers" />
+
+	<div class="pt-4">
+		<Trainers />
 	</div>
 </div>

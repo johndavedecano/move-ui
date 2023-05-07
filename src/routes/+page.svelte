@@ -51,6 +51,9 @@
 		<li>
 			<a href="/pages">Pages</a>
 		</li>
+		<li>
+			<a href="/pages/misc">Misc</a>
+		</li>
 	</ul>
 	<hr />
 	{#if show === 'buttons'}

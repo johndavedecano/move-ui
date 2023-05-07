@@ -12,9 +12,9 @@
 <div class="workout-hr">
 	<div class="workout-hr-img br-8" style="--background-img: {url};" />
 	<div class="workout-hr-content pl-4">
-		<div class="label navy-dark fw-500">
+		<a class="label navy-dark fw-500" href="/">
 			{title}
-		</div>
+		</a>
 		<div class="caption gray-6 fw-400">{category} &#149; <Icon name="clock" /> {duration}</div>
 	</div>
 </div>

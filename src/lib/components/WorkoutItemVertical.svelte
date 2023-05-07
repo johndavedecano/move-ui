@@ -12,9 +12,9 @@
 <div class="workout-vr">
 	<div class="workout-vr-img br-16" style="--background-img: {url};" />
 	<div class="workout-vr-content pt-4">
-		<div class="label navy-dark fw-500">
+		<a class="label navy-dark fw-500" href="/">
 			{title}
-		</div>
+		</a>
 		<div class="caption gray-6 fw-400">{category} &#149; <Icon name="clock" /> {duration}</div>
 	</div>
 </div>
@@ -24,6 +24,7 @@
 		display: flex;
 		align-items: stretch;
 		flex-direction: column;
+		min-width: 120px;
 	}
 	.workout-vr-img {
 		display: flex;
