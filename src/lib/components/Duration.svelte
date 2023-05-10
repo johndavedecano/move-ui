@@ -66,5 +66,8 @@
 		padding: 12px 16px;
 		background-color: var(--white);
 		user-select: none;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 </style>

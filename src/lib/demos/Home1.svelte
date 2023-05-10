@@ -2,6 +2,7 @@
 	// @ts-nocheck
 	import Collections from '$lib/components/Collections.svelte';
 	import Exercises from '$lib/components/Exercises.svelte';
+	import FilterModal from '$lib/components/FilterModal.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import ImageSlider from '$lib/components/ImageSlider.svelte';
 	import NavMenu from '$lib/components/NavMenu.svelte';
@@ -11,7 +12,11 @@
 	import Trainers from '$lib/components/Trainers.svelte';
 	import WorkoutItem from '$lib/components/WorkoutItem.svelte';
 	import WorkoutListVertical from '$lib/components/WorkoutListVertical.svelte';
+
+	let filter = false;
 </script>
+
+<FilterModal open={filter} on:close={() => (filter = false)} />
 
 <PageWrapper>
 	<svelte:fragment slot="header">
@@ -19,8 +24,8 @@
 			<a href="/pages/onboarding1" slot="prepend">
 				<Icon name="mm-logo" />
 			</a>
-			<div class="pr-6" slot="append">
-				<a href="/">
+			<div class="pr-2" slot="append">
+				<a href="/" on:click|preventDefault={() => (filter = true)}>
 					<Icon name="filter" />
 				</a>
 			</div>

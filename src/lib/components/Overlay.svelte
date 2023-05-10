@@ -9,15 +9,13 @@
 
 	export let show = false;
 
-	const toggleOverflow = () => {
+	$: if (browser) {
 		if (show) {
 			document.body.style.overflow = 'hidden';
 		} else {
 			document.body.style.overflow = '';
 		}
-	};
-
-	$: if (browser && show) toggleOverflow();
+	}
 
 	const hideOverlay = () => {
 		document.body.style.overflow = '';

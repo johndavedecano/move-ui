@@ -31,13 +31,23 @@
 			}
 		};
 	};
+
+	const onClickItem = () => {
+		if (items.length - 1 === active) {
+			active = 0;
+		} else {
+			active = active + 1;
+		}
+	};
 </script>
 
 <div class="image-slider-wrapper">
 	<div class="image-slider" use:dimensions>
 		<div class="image-slider-items" style="transform: translateX({0 - offset}px);">
 			{#each items as item}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div
+					on:click={onClickItem}
 					class="image-slider-item"
 					style="background-image: url('{item}'); height: {height}px; min-width: {width}px;"
 					transition:slide={{ delay: 250, duration: 300, easing: quintOut, axis: 'x' }}
