@@ -80,6 +80,7 @@
 		bottom: 0;
 		left: 0;
 		background-color: var(--white);
+		z-index: 1000;
 	}
 
 	.nav-menu a {

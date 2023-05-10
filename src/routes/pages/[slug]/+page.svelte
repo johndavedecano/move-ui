@@ -32,6 +32,10 @@
 	import Checkin2 from '$lib/demos/Checkin2.svelte';
 
 	import Home1 from '$lib/demos/Home1.svelte';
+	import Home2 from '$lib/demos/Home2.svelte';
+	import Home3 from '$lib/demos/Home3.svelte';
+	import Home4 from '$lib/demos/Home4.svelte';
+	import Home5 from '$lib/demos/Home5.svelte';
 
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
 	import Misc from '$lib/demos/Misc.svelte';
@@ -65,6 +69,10 @@
 			checkin1: Checkin1,
 			checkin2: Checkin2,
 			home1: Home1,
+			home2: Home2,
+			home3: Home3,
+			home4: Home4,
+			home5: Home5,
 			misc: Misc
 		}[slug] || Splash;
 </script>
