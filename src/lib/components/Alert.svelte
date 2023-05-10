@@ -60,6 +60,7 @@
 		padding: 16px 14px 16px 16px;
 		background-color: var(--navy-dark);
 		flex-direction: row;
+		pointer-events: all;
 	}
 
 	.alert-content {
