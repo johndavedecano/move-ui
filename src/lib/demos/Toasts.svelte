@@ -41,13 +41,10 @@
 				<div class="form-group mb-3">
 					<label for="">Select Type</label>
 					<select bind:value={settings.type} class="form-control form-control-lg">
-						<option value="primary"> primary </option>
-						<option value="dark"> dark </option>
-						<option value="default"> default </option>
+						<option value="success"> success </option>
 						<option value="info"> info </option>
 						<option value="warning"> warning </option>
 						<option value="error"> error </option>
-						<option value="success"> success </option>
 					</select>
 				</div>
 				<div class="form-group mb-4">

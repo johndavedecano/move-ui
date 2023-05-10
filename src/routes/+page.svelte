@@ -87,8 +87,8 @@
 		margin: 0;
 		padding: 0;
 		display: flex;
-		width: 100vw;
-		overflow-x: auto;
+		flex-wrap: wrap;
+		gap: 16px;
 	}
 	.demo-list li a {
 		display: flex;

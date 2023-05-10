@@ -48,7 +48,7 @@
 	</div>
 	{#if closable}
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<div class="alert-append" on:click={() => dispatcher('close')}>
+		<div class="alert-append pl-4" on:click={() => dispatcher('close')}>
 			<AlertCloseIcon />
 		</div>
 	{/if}
