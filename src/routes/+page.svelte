@@ -49,6 +49,9 @@
 			<a href="/" on:click|preventDefault={() => toggle('check-icons')}>Check Icons</a>
 		</li>
 		<li>
+			<a href="/pages/toasts">Toasts</a>
+		</li>
+		<li>
 			<a href="/pages">Pages</a>
 		</li>
 		<li>

@@ -39,6 +39,7 @@
 
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
 	import Misc from '$lib/demos/Misc.svelte';
+	import Toasts from '$lib/demos/Toasts.svelte';
 
 	$: slug = $page.params.slug;
 
@@ -73,7 +74,8 @@
 			home3: Home3,
 			home4: Home4,
 			home5: Home5,
-			misc: Misc
+			misc: Misc,
+			toasts: Toasts
 		}[slug] || Splash;
 </script>
 
