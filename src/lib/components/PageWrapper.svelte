@@ -31,9 +31,9 @@
 		--bottom-height: 74px;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
 		justify-content: stretch;
-		width: 100vw;
+		max-width: 100%;
+		height: 100vh;
 	}
 	.content-inner {
 		padding-bottom: var(--bottom-height);

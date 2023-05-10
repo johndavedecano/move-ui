@@ -32,7 +32,6 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-image: var(--background-img);
-		background-color: var(--coral-dark);
 		width: 100%;
 		aspect-ratio: 16 / 9;
 	}
