@@ -30,8 +30,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-image: var(--background-img);
-		background-color: var(--coral-dark);
-		width: 120px;
+		min-width: 120px;
 		height: 80px;
 	}
 	.workout-hr-content {

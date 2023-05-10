@@ -102,6 +102,20 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<div class="header">Home/Filter</div>
+			<ul>
+				<li>
+					<a href="/pages/home1">Home 1</a>
+				</li>
+				<li>
+					<a href="/pages/home2">Home 2</a>
+				</li>
+				<li>
+					<a href="/pages/home3">Home 3</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 

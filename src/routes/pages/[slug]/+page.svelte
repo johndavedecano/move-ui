@@ -31,6 +31,8 @@
 	import Checkin1 from '$lib/demos/Checkin1.svelte';
 	import Checkin2 from '$lib/demos/Checkin2.svelte';
 
+	import Home1 from '$lib/demos/Home1.svelte';
+
 	import SplashCheckin from '$lib/demos/SplashCheckin.svelte';
 	import Misc from '$lib/demos/Misc.svelte';
 
@@ -62,6 +64,7 @@
 			checkin: SplashCheckin,
 			checkin1: Checkin1,
 			checkin2: Checkin2,
+			home1: Home1,
 			misc: Misc
 		}[slug] || Splash;
 </script>
