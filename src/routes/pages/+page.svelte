@@ -122,6 +122,14 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<div class="header">Playlist</div>
+			<ul>
+				<li>
+					<a href="/pages/playlist1">Playlist 1</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
