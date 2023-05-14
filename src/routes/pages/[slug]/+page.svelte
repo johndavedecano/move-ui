@@ -42,6 +42,7 @@
 	import Toasts from '$lib/demos/Toasts.svelte';
 	import Playlist1 from '$lib/demos/Playlist1.svelte';
 	import Trainer1 from '$lib/demos/Trainer1.svelte';
+	import Trainer2 from '$lib/demos/Trainer2.svelte';
 
 	$: slug = $page.params.slug;
 
@@ -78,6 +79,7 @@
 			home5: Home5,
 			playlist1: Playlist1,
 			trainer1: Trainer1,
+			trainer2: Trainer2,
 			misc: Misc,
 			toasts: Toasts
 		}[slug] || Splash;

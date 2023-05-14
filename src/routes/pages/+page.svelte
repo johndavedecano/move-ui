@@ -131,10 +131,33 @@
 			</ul>
 		</li>
 		<li>
-			<div class="header">Trainer</div>
+			<div class="header">Trainers</div>
 			<ul>
 				<li>
-					<a href="/pages/trainer1">Trainer 1</a>
+					<a href="/pages/trainer1">Trainer 1 (Profile)</a>
+				</li>
+				<li>
+					<a href="/pages/trainer2">Trainer 2</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<div class="header">Profile</div>
+			<ul>
+				<li>
+					<a href="/pages/profile1">Profile 1</a>
+				</li>
+				<li>
+					<a href="/pages/profile2">Profile 2</a>
+				</li>
+				<li>
+					<a href="/pages/profile3">Profile 3</a>
+				</li>
+				<li>
+					<a href="/pages/profile4">Profile 4</a>
+				</li>
+				<li>
+					<a href="/pages/profile5">Profile 5</a>
 				</li>
 			</ul>
 		</li>

@@ -5,7 +5,7 @@
 	export let title = 'Core Strengthening Pilates: A 20-Minute Workout';
 	export let category = 'Pilates';
 	export let duration = '15 mins';
-
+	export let like = false;
 	$: url = `url(${src})`;
 </script>
 
@@ -17,6 +17,11 @@
 		</a>
 		<div class="caption gray-6 fw-400">{category} &#149; <Icon name="clock" /> {duration}</div>
 	</div>
+	{#if like}
+		<a class="workout-hr-like" href="/" on:click|preventDefault={() => {}}>
+			<img src="/like.png" alt="" />
+		</a>
+	{/if}
 </div>
 
 <style>
@@ -36,5 +41,11 @@
 	.workout-hr-content {
 		display: flex;
 		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.workout-hr-like img {
+		min-width: 40px;
+		height: auto;
 	}
 </style>
