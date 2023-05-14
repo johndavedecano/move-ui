@@ -44,6 +44,12 @@
 	import Trainer1 from '$lib/demos/Trainer1.svelte';
 	import Trainer2 from '$lib/demos/Trainer2.svelte';
 
+	import Profile1 from '$lib/demos/Profile1.svelte';
+	import Profile2 from '$lib/demos/Profile2.svelte';
+	import Profile3 from '$lib/demos/Profile3.svelte';
+	import Profile4 from '$lib/demos/Profile4.svelte';
+	import Profile5 from '$lib/demos/Profile5.svelte';
+
 	$: slug = $page.params.slug;
 
 	$: component =
@@ -81,7 +87,13 @@
 			trainer1: Trainer1,
 			trainer2: Trainer2,
 			misc: Misc,
-			toasts: Toasts
+			toasts: Toasts,
+
+			profile1: Profile1,
+			profile2: Profile2,
+			profile3: Profile3,
+			profile4: Profile4,
+			profile5: Profile5
 		}[slug] || Splash;
 </script>
 
