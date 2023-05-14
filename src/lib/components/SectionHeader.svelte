@@ -2,7 +2,7 @@
 	export let title = 'Collections';
 	export let link = '/';
 	export let linkText = 'View all';
-	export let subtitle = 'Playlists of workouts curated around specific needs.';
+	export let subtitle = '';
 </script>
 
 <div class="section-header">

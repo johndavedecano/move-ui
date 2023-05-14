@@ -3,8 +3,6 @@
 
 	import { createEventDispatcher } from 'svelte';
 
-	import Card from './Card.svelte';
-
 	const dispatcher = createEventDispatcher();
 
 	const onClickItem = (selected) => dispatcher('change', { selected });

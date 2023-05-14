@@ -130,6 +130,14 @@
 				</li>
 			</ul>
 		</li>
+		<li>
+			<div class="header">Trainer</div>
+			<ul>
+				<li>
+					<a href="/pages/trainer1">Trainer 1</a>
+				</li>
+			</ul>
+		</li>
 	</ul>
 </div>
 
