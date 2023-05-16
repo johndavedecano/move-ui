@@ -1,10 +1,14 @@
 <script>
+	// @ts-nocheck
+
 	import Avatar from './Avatar.svelte';
+
+	let input;
 </script>
 
 <div class="avatar-field">
 	<Avatar width="124" height="124" src="https://randomuser.me/api/portraits/women/95.jpg" />
-	<a class="avatar-field-button" href="/" on:click|preventDefault={() => {}}>
+	<a class="avatar-field-button" href="/" on:click|preventDefault={() => input.click()}>
 		<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
 				fill-rule="evenodd"
@@ -20,6 +24,7 @@
 			/>
 		</svg>
 	</a>
+	<input type="file" class="avatar-field-input" bind:this={input} accept="image/*" />
 </div>
 
 <style>
@@ -40,5 +45,11 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+	}
+
+	.avatar-field-input {
+		width: 1px;
+		height: 1px;
+		position: absolute;
 	}
 </style>

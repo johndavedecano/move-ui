@@ -14,7 +14,9 @@
 </script>
 
 <div class={customWrapperClass}>
-	<label for={name}>{label}</label>
+	{#if label}
+		<label for={name}>{label}</label>
+	{/if}
 	<div class="text-field-input br-12">
 		{#if $$slots.prepend}
 			<div class="text-field-prepend">

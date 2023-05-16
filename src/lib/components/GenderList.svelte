@@ -3,7 +3,11 @@
 
 	import GenderListItem from '$lib/components/GenderListItem.svelte';
 
-	let selected = 'female';
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
+
+	export let selected = 'female';
 
 	const labels = {
 		male: 'Male',
@@ -15,6 +19,7 @@
 
 	const onItemClicked = (evt) => {
 		selected = evt.detail.selected;
+		dispatch('selected', { selected });
 	};
 </script>
 

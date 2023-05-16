@@ -5,6 +5,8 @@
 	import Button from '$lib/components/Button.svelte';
 	import CountrySelect from '$lib/components/CountrySelect.svelte';
 	import DateField from '$lib/components/DateField.svelte';
+	import GenderField from '$lib/components/GenderField.svelte';
+	import GenderModal from '$lib/components/GenderModal.svelte';
 
 	// @ts-nocheck
 	import Icon from '$lib/components/Icon.svelte';
@@ -14,10 +16,19 @@
 	import TextField from '$lib/components/TextField.svelte';
 
 	let sorting = false;
+	let gender = false;
+	let genderValue = '';
 </script>
 
 <SortingModal open={sorting} on:close={() => (sorting = false)} />
+<GenderModal
+	open={gender}
+	value={genderValue}
+	on:close={() => (gender = false)}
+	on:change={(evt) => (genderValue = evt.detail.selected)}
+/>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <PageWrapper>
 	<svelte:fragment slot="header">
 		<PageHeader>
@@ -63,8 +74,8 @@
 					</TextField>
 				</div>
 			</div>
-			<div class="mb-6 grid grid-col-1">
-				<TextField label="Gender" name="gender" type="text" value="Female" />
+			<div class="mb-6 grid grid-col-1" on:click={() => (gender = true)}>
+				<GenderField label="Gender" name="gender" type="text" value={genderValue} />
 			</div>
 
 			<div class="mb-6 grid grid-col-1">

@@ -19,7 +19,11 @@
 </script>
 
 <div class={customWrapperClass}>
-	<label for={name}>{label}</label>
+	{#if label}
+		<div class="mb-3">
+			<label for={name}>{label}</label>
+		</div>
+	{/if}
 	<div class="date-field-input br-12">
 		<div class="date-field-prepend">
 			<Icon name="calendar" />
