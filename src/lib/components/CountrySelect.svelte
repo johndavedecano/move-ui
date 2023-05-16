@@ -15,7 +15,7 @@
 	<label for={name}>
 		{label}
 	</label>
-	<div class="pt-2">
+	<div class="">
 		<Select
 			{name}
 			items={countries}
@@ -47,9 +47,11 @@
 </div>
 
 <style>
-	.countr-select {
+	.country-select {
 		display: flex;
 		flex-direction: column;
+
+		--item-color: var(--navy-dark);
 	}
 
 	label {
@@ -66,7 +68,7 @@
 	}
 
 	.flag {
-		width: 16px;
+		min-width: 16px;
 	}
 
 	.flag-label {
@@ -75,6 +77,10 @@
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: 400;
+	}
+
+	:global(.svelte-select) {
+		border-color: var(--gray-4) !important;
 	}
 
 	:global(.svelte-select.focused) {
