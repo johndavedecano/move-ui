@@ -35,6 +35,3 @@
 		<Button on:click={onClose} color="tertiary" variant="flat" size="lg" fullWidth>Cancel</Button>
 	</div>
 </BottomModal>
-
-<style>
-</style>

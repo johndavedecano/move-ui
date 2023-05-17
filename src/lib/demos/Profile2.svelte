@@ -12,15 +12,12 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import PageWrapper from '$lib/components/PageWrapper.svelte';
-	import SortingModal from '$lib/components/SortingModal.svelte';
 	import TextField from '$lib/components/TextField.svelte';
 
-	let sorting = false;
 	let gender = false;
 	let genderValue = '';
 </script>
 
-<SortingModal open={sorting} on:close={() => (sorting = false)} />
 <GenderModal
 	open={gender}
 	value={genderValue}

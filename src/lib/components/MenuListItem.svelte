@@ -8,7 +8,7 @@
 	<a {href}>
 		<span class="body"> {title} </span>
 		{#if subtitle}
-			<span class="caption gray-6 fw-400">{subtitle} </span>
+			<span class="mb-1 caption gray-6 fw-400">{subtitle} </span>
 		{/if}
 	</a>
 	<slot />

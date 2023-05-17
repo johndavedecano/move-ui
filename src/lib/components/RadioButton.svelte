@@ -25,6 +25,7 @@
 		display: inline-flex;
 		overflow: hidden;
 		position: relative;
+		min-width: 20px;
 	}
 
 	.radio-button-checker {
@@ -37,6 +38,7 @@
 		height: 20px;
 		justify-content: center;
 		width: 20px;
+		min-width: 20px;
 		transition: all 100ms ease-in-out;
 	}
 
@@ -47,6 +49,7 @@
 		position: absolute;
 		top: 0;
 		width: 20px;
+		min-width: 20px;
 	}
 
 	.radio-button .radio-button-icon {
