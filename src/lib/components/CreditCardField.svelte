@@ -7,7 +7,6 @@
 	export let placeholder = '';
 	export let wrapperClass = '';
 	export let inputClass = '';
-	export let element = 'input';
 
 	let value;
 	let type = 'card';
@@ -16,7 +15,15 @@
 
 	$: customInputClass = classnames([inputClass]);
 
-	const hasIcons = ['visa', 'mastercard', 'amex', 'diners'];
+	const hasIcons = ['visa', 'mastercard', 'amex'];
+
+	const cards = {
+		card: 'https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/kYD6Lg3zki/card.png',
+		visa: 'https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/RunekcxCLA/visa.png',
+		mastercard:
+			'https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/TOOfJU5ard/mastercard.png',
+		amex: 'https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/1C64nyjnGp/amex.png'
+	};
 
 	function creditCardType(number) {
 		// visa
@@ -92,15 +99,14 @@
 	<label for={name}>{label}</label>
 	<div class="cc-field-input br-12">
 		<div class="cc-field-prepend">
-			<img src={`/${type}.png`} alt="visa" class="cc-icon" />
+			<img src={cards[type]} alt={type} class="cc-icon" />
 		</div>
 		<input
-			this={element}
-			class={customInputClass}
+			{...$$restProps}
 			{placeholder}
+			class={customInputClass}
 			bind:value
 			use:creditCardFormat
-			{...$$restProps}
 		/>
 		{#if $$slots.append}
 			<div class="cc-field-append">

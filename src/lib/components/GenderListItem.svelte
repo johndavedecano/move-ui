@@ -16,11 +16,11 @@
 </script>
 
 <Card
+	{...$$restProps}
 	border="sm"
 	radius="sm"
 	customClass={classes}
 	borderColor={selected ? 'coral-light' : 'gray-4'}
-	{...$$restProps}
 >
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div

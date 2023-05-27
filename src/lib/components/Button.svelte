@@ -65,7 +65,7 @@
 		--btn-bg: transparent;
 		--btn-border-color: currentcolor;
 		--btn-border-style: solid;
-		--btn-border-width: var(--space-1px);
+		--btn-border-width: 1px;
 		--btn-color: var(--navy);
 		border: var(--btn-border-width) var(--btn-border-style) var(--btn-border-color);
 	}

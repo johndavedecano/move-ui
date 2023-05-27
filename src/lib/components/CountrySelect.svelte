@@ -15,7 +15,7 @@
 	<label for={name}>
 		{label}
 	</label>
-	<div class="">
+	<div>
 		<Select
 			{name}
 			items={countries}
