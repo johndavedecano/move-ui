@@ -14,7 +14,10 @@
 		on:click={() => setActive('cardio')}
 	>
 		<div class="exercises-item-box mb-2">
-			<img src="/cardio.png" alt="cardio" />
+			<img
+				src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/hASdMmNR8D/cardio.png"
+				alt="cardio"
+			/>
 		</div>
 		<div class="text-center fw-600 label navy-dark">Cardio</div>
 	</div>
@@ -26,7 +29,10 @@
 		on:click={() => setActive('yoga')}
 	>
 		<div class="exercises-item-box mb-2">
-			<img src="/yoga.png" alt="yoga" />
+			<img
+				src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/YD18mh6cLH/yoga.png"
+				alt="yoga"
+			/>
 		</div>
 		<div class="text-center fw-600 label navy-dark">Yoga</div>
 	</div>
@@ -37,7 +43,10 @@
 		on:click|preventDefault={() => setActive('pilates')}
 	>
 		<div class="exercises-item-box mb-2">
-			<img src="/pilates.png" alt="pilates" />
+			<img
+				src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/boJdaT3j6d/pilates.png"
+				alt="pilates"
+			/>
 		</div>
 		<div class="text-center fw-600 label navy-dark">Pilates</div>
 	</div>
@@ -48,7 +57,10 @@
 		on:click={() => setActive('strength')}
 	>
 		<div class="exercises-item-box mb-2">
-			<img src="/strength.png" alt="strength" />
+			<img
+				src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/npjjQszejr/strength.png"
+				alt="strength"
+			/>
 		</div>
 		<div class="text-center fw-600 label navy-dark">Strength</div>
 	</div>

@@ -17,6 +17,7 @@
 	import ImageSlider from '$lib/components/ImageSlider.svelte';
 	import NavMenu from '$lib/components/NavMenu.svelte';
 	import ProfileMenu from '$lib/components/ProfileMenu.svelte';
+	import SortButton from '$lib/components/SortButton.svelte';
 
 	let overlay = false;
 
@@ -81,14 +82,7 @@
 <div class="p-4">
 	<SectionHeader title="Recent" subtitle="Workouts you completed recently.">
 		<svelte:fragment slot="action">
-			<a
-				href="/"
-				on:click|preventDefault={() => console.log('sorting...')}
-				class="fw-600 navy-dark label"
-			>
-				<span class="mr-2">Sort</span>
-				<Icon name="sort" />
-			</a>
+			<SortButton />
 		</svelte:fragment>
 	</SectionHeader>
 

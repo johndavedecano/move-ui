@@ -12,7 +12,10 @@
 		href="/"
 		on:click|preventDefault={() => onClickItem(1)}
 	>
-		<img src="/emotion-1.png" alt="1" />
+		<img
+			src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/j1d8B7bkDg/emotion-1.png"
+			alt="1"
+		/>
 	</a>
 	<a
 		class="br-8 emotion-list-item"
@@ -20,7 +23,10 @@
 		href="/"
 		on:click|preventDefault={() => onClickItem(2)}
 	>
-		<img src="/emotion-2.png" alt="2" />
+		<img
+			src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/MdPZi2CLcI/emotion-2.png"
+			alt="2"
+		/>
 	</a>
 	<a
 		class="br-8 emotion-list-item"
@@ -28,7 +34,10 @@
 		href="/"
 		on:click|preventDefault={() => onClickItem(3)}
 	>
-		<img src="/emotion-3.png" alt="3" />
+		<img
+			src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/Nqn6kTbJ1i/emotion-3.png"
+			alt="3"
+		/>
 	</a>
 	<a
 		class="br-8 emotion-list-item"
@@ -36,7 +45,10 @@
 		href="/"
 		on:click|preventDefault={() => onClickItem(4)}
 	>
-		<img src="/emotion-4.png" alt="4" />
+		<img
+			src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/iAgIjMZhtA/emotion-4.png"
+			alt="4"
+		/>
 	</a>
 	<a
 		class="br-8 emotion-list-item"
@@ -44,7 +56,10 @@
 		href="/"
 		on:click|preventDefault={() => onClickItem(5)}
 	>
-		<img src="/emotion-5.png" alt="5" />
+		<img
+			src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/VbcL3KaaBm/emotion-5.png"
+			alt="5"
+		/>
 	</a>
 </div>
 

@@ -11,7 +11,10 @@
 	<div class="intensity-item" class:active={active === 'chill'} on:click={() => setActive('chill')}>
 		<div class="intensity-content">
 			<div class="intensity-item-box mb-1">
-				<img src="/chill.png" alt="chill" />
+				<img
+					src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/aAs0SBzRm9/chill.png"
+					alt="chill"
+				/>
 			</div>
 			<div class="text-center fw-600 caption navy-dark">Chill</div>
 		</div>
@@ -25,7 +28,10 @@
 	>
 		<div class="intensity-content">
 			<div class="intensity-item-box mb-2">
-				<img src="/move.png" alt="move" />
+				<img
+					src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/33UGGeeZdL/move.png"
+					alt="move"
+				/>
 			</div>
 			<div class="text-center fw-600 caption navy-dark">Move</div>
 		</div>
@@ -38,7 +44,10 @@
 	>
 		<div class="intensity-content">
 			<div class="intensity-item-box mb-2">
-				<img src="/sweat.png" alt="sweat" />
+				<img
+					src="https://new-cdn.mamamia.com.au/cms-mainsite.appspot.com/media/kU8Jpd565n/sweat.png"
+					alt="sweat"
+				/>
 			</div>
 			<div class="text-center fw-600 caption navy-dark">Sweat</div>
 		</div>
