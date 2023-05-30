@@ -8,7 +8,7 @@
 	$: classes = classnames(['wrapper', wrapperClass]);
 </script>
 
-<div class={wrapperClass}>
+<div class={classes}>
 	{#if $$slots.header}
 		<slot name="header" />
 	{/if}
