@@ -1,10 +1,19 @@
 <script>
+	import CountryField from '$lib/components/CountryField.svelte';
 	import EmotionList from '$lib/components/EmotionList.svelte';
 	import GenderList from '$lib/components/GenderList.svelte';
 	import IconEmail from '$lib/components/IconEmail.svelte';
 	import IconEye from '$lib/components/IconEye.svelte';
 	import TextField from '$lib/components/TextField.svelte';
 </script>
+
+<CountryField
+	wrapperClass="mb-4"
+	label="Country"
+	name="country"
+	placeholder="Select Country"
+	required
+/>
 
 <TextField
 	wrapperClass="mb-4"

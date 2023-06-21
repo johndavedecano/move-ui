@@ -8,12 +8,14 @@
 	export let inputClass = '';
 	export let element = 'input';
 
+	export let borderColor = '--gray-4';
+
 	$: customWrapperClass = classnames(['text-field', 'br-12', wrapperClass]);
 
 	$: customInputClass = classnames([inputClass]);
 </script>
 
-<div class={customWrapperClass}>
+<div class={customWrapperClass} style="--border-color: {borderColor};">
 	{#if label}
 		<label for={name}>{label}</label>
 	{/if}
@@ -57,7 +59,7 @@
 	.text-field-input {
 		align-items: center;
 		background: var(--white);
-		border: 1px solid var(--gray-4);
+		border: 1px solid var(--border-color);
 		display: flex;
 		flex-direction: row;
 		gap: 8px;
